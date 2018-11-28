@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'open_sanslight';
+  src: url('../fonts/opensans-light-webfont.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gilroyextrabold';
+  src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* есть ли смысл задавать шрифты в бади если на странице два разных с примерным соотношением 50/50 ? */
+  font-family: "open_sanslight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+
+  background-color: #ffffff;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.main-logo {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #000000;
+  line-height: 1;
+  /* но это не точно */
+}
+
+/* для внутренних страниц */
+/* .main-logo:hover{
+    color: rgba(0, 0 ,0, 0.5);
+}
+
+.main-logo:active{
+    color: rgba(0, 0, 0, 0.2);
+} */
+
+.main-header {
+  background-color: #f7e296;
+}
+
+
+.site-navigation,
+.user-navigation,
+.site-navigation .dropdown-menu{
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a{
+    color: #000000;
+}
+
+.site-navigation{
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+/* разобраться с кнопкой и инпутом */
+.search-field {
+  border: none;
+  background-color: transparent;
+  color: rgba(134, 131, 131, 0.3);
+}
+
+.search-field:hover::placeholder,
+.login-link:hover,
+.compare-link:hover,
+.cart-link:hover,
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.login-link:active,
+.compare-link:active,
+.cart-link:active,
+.site-navigation a:active,
+.user-navigation a:active{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-field:focus {
+  color: #000000;
+}
+
+.search-field {
+  width: 441px;
+  padding-bottom: 14px;
+}
+
+.search-field:focus {
+  border-bottom: 2px solid #000000;
+}
+
