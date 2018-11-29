@@ -26,7 +26,6 @@ body {
   background-color: #ffffff;
 }
 
-
 a {
   text-decoration: none;
 }
@@ -38,6 +37,10 @@ a {
   color: #000000;
   line-height: 1;
   /* но это не точно */
+}
+
+.main-footer .main-logo {
+  color: #ffc600;
 }
 
 /* для внутренних страниц */
@@ -56,25 +59,46 @@ a {
 
 .site-navigation,
 .user-navigation,
-.site-navigation .dropdown-menu{
-    list-style: none;
+.site-navigation .dropdown-menu {
+  list-style: none;
+}
+
+.site-navigation .dropdown-menu {
+  font-family: "open_sanslight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  text-transform: none;
 }
 
 .site-navigation a,
-.user-navigation a{
-    color: #000000;
+.user-navigation a {
+  color: #000000;
 }
 
-.site-navigation{
-    font-family: "gilroyextrabold", Arial, sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
+.site-navigation {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
 }
+
 /* разобраться с кнопкой и инпутом */
 .search-field {
   border: none;
   background-color: transparent;
   color: rgba(134, 131, 131, 0.3);
+}
+
+.search-field:focus {
+  color: #000000;
+}
+
+/* .search-field {
+  width: 441px;
+  padding-bottom: 14px;
+} */
+
+.search-field:focus {
+  border-bottom: 2px solid #000000;
 }
 
 .search-field:hover::placeholder,
@@ -90,20 +114,37 @@ a {
 .compare-link:active,
 .cart-link:active,
 .site-navigation a:active,
-.user-navigation a:active{
-    color: rgba(0, 0, 0, 0.3);
+.user-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.search-field:focus {
+.index-columns {
+  line-height: 30px;
+}
+
+.index-columns h2 {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 47.5px;
+  line-height: 47.5px;
   color: #000000;
 }
 
-.search-field {
-  width: 441px;
-  padding-bottom: 14px;
+.companies-list {
+  list-style: circle;
 }
 
-.search-field:focus {
-  border-bottom: 2px solid #000000;
+.companies-list a {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  line-height: 41px;
+  color: #000000;
+
 }
 
+.button {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  line-height: 23.5px;
+  letter-spacing: 3.7px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
