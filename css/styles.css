@@ -1,0 +1,391 @@
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('../fonts/opensans-light-webfont.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'GilroyExtraBold';
+  src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "OpenSansLight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Кнопки */
+.button {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 23.5px;
+  letter-spacing: 3.7px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f0c52e;
+
+  display: flex;
+  align-items: center;
+  height: 8px;
+  width: fit-content;
+  padding: 0 14px;
+  border: none;
+}
+
+.button:hover {
+  padding: 10px;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Главная страница */
+
+/* Шапка */
+.main-header {
+  background-color: #f7e296;
+}
+
+/* Логотип */
+.index-header-logo,
+.inner-header-logo {
+  font-family: "GilroyExtraBold", Arial, sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* Поиск */
+.search-underline {
+  display: flex;
+  border-bottom: 2px solid #000000;
+  width: 441px;
+}
+
+/* Шрифт обрезается, поправить */
+.search-field {
+  border: none;
+  background-color: transparent;
+
+  margin-right: auto;
+}
+
+.search-field::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-field:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-field:focus {
+  color: #000000;
+}
+
+.search-btn {
+  border: none;
+  width: 85px;
+  height: 49px;
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #000000;
+  background-color: inherit;
+}
+
+.search-btn:hover {
+  color: #ffffff;
+  background: #000000;
+}
+
+/* Навигация */
+.header-site-navigation,
+.header-site-navigation .dropdown-menu,
+.header-user-navigation {
+  list-style: none;
+}
+
+.main-navigation {
+  font-family: "GilroyExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  /* color: #000000; */
+}
+
+.header-site-navigation a,
+.header-user-navigation a {
+  color: #000000;
+}
+
+.header-site-navigation a:hover,
+.header-user-navigation a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-user-navigation a:active,
+.header-site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-site-navigation .dropdown-menu {
+  font-family: "OpenSansLight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  text-transform: none;
+}
+
+/* Счетчик для слайдера */
+
+.slider-numbers {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 180.5px;
+  line-height: 180.5px;
+  color: #ffffff;
+}
+
+.slider-numbers .number:nth-child(2),
+.slider-numbers .number:nth-child(3) {
+  display: none;
+}
+
+/* Тело */
+
+/* Заголовки разделов */
+.index-columns h2 {
+  font-family: "GilroyExtraBold";
+  font-size: 47.5px;
+  line-height: 47.5px;
+  color: #000000;
+}
+
+/* Перечень компаний */
+.companies-list {
+  list-style: circle;
+}
+
+.companies-list a {
+  font-family: "GilroyExtraBold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.companies-list a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.companies-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Подвал */
+.main-footer {
+  background-color: #464646;
+  color: #ffffff;
+}
+
+/* Логотип */
+.index-footer-logo,
+.inner-footer-logo {
+  font-family: "GilroyExtraBold", Arial, sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #ffc600;
+}
+
+/* Навигация */
+.footer-site-navigation,
+.footer-user-navigation {
+  list-style: none;
+}
+
+.footer-site-navigation a,
+.footer-user-navigation a {
+  color: #ffffff;
+}
+
+.footer-site-navigation a:hover,
+.footer-user-navigation a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-user-navigation a:active,
+.footer-site-navigation a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.header-site-navigation .dropdown-menu {
+  font-family: "OpenSansLight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  text-transform: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+/* Соцсети */
+
+.footer-social {
+  list-style: none;
+}
+
+.social-btn {
+  color: #ffffff;
+}
+
+/* Телефон */
+.footer-phone {
+  text-align: right;
+}
+
+.footer-phone a {
+  color: #ffffff;
+}
+
+.footer-phone a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-phone a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Логотип */
+.footer-copyright {
+  text-align: center;
+}
+
+.html-logo {
+  width: 27px;
+  height: 35px;
+  object-fit: contain;
+  /* ? */
+  fill: #ffc600;
+}
+
+.html-logo:hover {
+  opacity: 0.6;
+}
+
+.html-logo:active {
+  opacity: 0.3;
+}
+
+
+.footer-copyright {
+  text-align: right;
+}
+
+/* Страница каталога */
+
+/* Навигация */
+.inner-header-logo:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.inner-header-logo:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.inner-footer-logo:hover {
+  color: rgba(255, 198, 0, 0.6);
+}
+
+.inner-footer-logo:active {
+  color: rgba(255, 198, 0, 0.3);
+}
+
+/* Тело */
+.page-title {
+  font-family: "GilroyExtraBold", Arial, sans-serif;
+  font-size: 47.5px;
+  line-height: 47.5px;
+  color: #000000;
+}
+
+/* Навигационная цепочка */
+/* По стайлгайду стили задаются только ко второму элементу, верно? */
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 24px;
+
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs .breadcrumbs-catalog:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs .breadcrumbs-catalog:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+/* Фильтры */
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-family: "GilroyExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.filter ul {
+  font-size: 14px;
+  line-height: 40px;
+  list-style: none;
+}
+
+.filter-input:hover+label {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.filter-input:active +label{
+    color: #000000;
+}
+
+.filter-input:disabled + label{
+    color: #a6a6a6;
+}
+
+.modal {
+  display: none;
+}
+
+.catalog-list{
+    list-style: none;
+}
+
+/* catalog-item */
+
+.catalog-item:hover{
+    background-color: rgba(238, 238, 238, 0.7);
+}

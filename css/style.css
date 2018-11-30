@@ -49,13 +49,26 @@ a {
   letter-spacing: 3.7px;
   color: #000000;
   text-transform: uppercase;
-  text-align: center;
 
   background-color: #f0c52e;
+
+  display: flex;
+  align-items: center;
+  height: 8px;
+  width: fit-content;
+  padding: 0 14px;
   border: none;
 }
 
-/* Навигация в шапке и футере */
+.button:hover {
+  padding: 10px;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Навигация в шапке и футере, ссылки на  */
 .header-site-navigation,
 .footer-site-navigation {
   font-family: "gilroyextrabold", Arial, sans-serif;
@@ -64,13 +77,27 @@ a {
   text-transform: uppercase;
 }
 
+/* .search-field:focus~.search-underline,
+.search-field:focus~.search-btn{
+  border-bottom: 2px solid #000000;
+  width: 441px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-underline{
+  display: none;
+} */
+
 /* ==============Шапка============== */
 .main-header {
   background-color: #f7e296;
 }
 
 /* Логотип */
-.main-logo {
+.index-header-logo,
+.inner-header-logo {
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 48px;
   line-height: 48px;
@@ -79,10 +106,38 @@ a {
 }
 
 /* Поиск */
+.search-underline {
+  display: flex;  
+  border-bottom: 2px solid #000000;
+  width: 441px;
+}
+
 .search-field {
   border: none;
   background-color: transparent;
   color: rgba(134, 131, 131, 0.3);
+
+  margin-right:auto;
+}
+
+.search-btn {
+  margin-left: auto;
+  border: none;
+  width: 85px;
+  height: 49px;
+  background-color: inherit;
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #000000;
+}
+
+.search-btn:hover {
+  color: #ffffff;
+  background: #000000;
+}
+
+.search-btn:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Меню */
@@ -110,6 +165,7 @@ a {
 .search-field:hover::placeholder {
   color: rgba(0, 0, 0, 0.6);
 } */
+
 /* Выпадающее меню */
 .header-site-navigation .dropdown-menu {
   font-family: "open_sanslight", Arial, sans-serif;
@@ -136,18 +192,24 @@ a {
   color: #000000;
 }
 
-/* Маркеры списка компаний */
+/* Список компаний*/
 .companies-list {
   list-style: circle;
 }
 
-/* Ссылки на сайты компаний TODO: добавить ховэры и экшены, если допускается добавлять свои стили */
 .companies-list a {
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 16px;
   line-height: 40px;
   color: #000000;
+}
 
+.companies-list a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.companies-list a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* ==============Подвал============== */
@@ -156,7 +218,8 @@ a {
   color: #ffffff;
 }
 
-.main-footer .main-logo {
+.index-footer-logo,
+.inner-footer-logo {
   color: #ffc600;
 }
 
@@ -167,49 +230,78 @@ a {
 }
 
 .footer-user-navigation a:hover,
-.footer-site-navigation a:hover {
+.footer-site-navigation a:hover,
+.footer-phone a:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-user-navigation a:active,
-.footer-site-navigation a:active{
+.footer-site-navigation a:active,
+.footer-phone a:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.social-btn{
+.footer-social {
+  text-align: center;
+}
+
+.social-btn {
   color: #ffffff;
 }
 
-.html-logo{
+.footer-copyright {
+  text-align: center;
+}
+
+.html-logo {
   width: 27px;
   height: 35px;
-  object-fit: contain; /* ? */
+  object-fit: contain;
+  /* ? */
   fill: #ffc600;
 }
 
-.html-logo:hover{
+.html-logo:hover {
   opacity: 0.6;
 }
 
-.html-logo:active{
+.html-logo:active {
   opacity: 0.3;
 }
-/* доработать или убрать */
-.click-call{
-  color: inherit;
+
+
+.footer-copyright {
+  text-align: right;
 }
-/* Ховеры, фокусы и экшены */
+
+.footer-phone {
+  text-align: right;
+}
+
+.footer-phone a {
+  color: #ffffff;
+}
+
+.modal {
+  display: none;
+}
 
 
-/* для внутренних страниц */
-/* .main-logo:hover{
+/*================================ Страница каталога ================================*/
+.inner-header-logo:hover{
     color: rgba(0, 0 ,0, 0.5);
 }
 
-.main-logo:active{
+.inner-header-logo:active{
     color: rgba(0, 0, 0, 0.2);
-} */
+} 
 
+.inner-footer-logo:hover{
+  color: rgba(255, 198, 0 , 0.6);
+}
+.inner-footer-logo:active{
+color: rgba(255, 198, 0, 0.3);
+}
 /* .search-field {
   width: 441px;
   padding-bottom: 14px;
