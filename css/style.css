@@ -14,10 +14,11 @@
 
 }
 
+/* Общие стили */
 body {
   margin: 0;
   padding: 0;
-  /* есть ли смысл задавать шрифты в бади если на странице два разных с примерным соотношением 50/50 ? */
+
   font-family: "open_sanslight", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -30,18 +31,175 @@ a {
   text-decoration: none;
 }
 
+/* Отключение маркеров списков */
+.header-site-navigation,
+.header-user-navigation,
+.header-site-navigation .dropdown-menu,
+.footer-site-navigation,
+.footer-user-navigation,
+.footer-social {
+  list-style: none;
+}
+
+/* Кнопки */
+.button {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 23.5px;
+  letter-spacing: 3.7px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #f0c52e;
+  border: none;
+}
+
+/* Навигация в шапке и футере */
+.header-site-navigation,
+.footer-site-navigation {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+/* ==============Шапка============== */
+.main-header {
+  background-color: #f7e296;
+}
+
+/* Логотип */
 .main-logo {
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 48px;
+  line-height: 48px;
   text-transform: uppercase;
   color: #000000;
-  line-height: 1;
-  /* но это не точно */
+}
+
+/* Поиск */
+.search-field {
+  border: none;
+  background-color: transparent;
+  color: rgba(134, 131, 131, 0.3);
+}
+
+/* Меню */
+.header-site-navigation a,
+.header-user-navigation a {
+  color: #000000;
+}
+
+.search-field:focus {
+  color: #000000;
+}
+
+.search-field:hover::placeholder,
+.header-site-navigation a:hover,
+.header-user-navigation a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-site-navigation a:active,
+.header-user-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* .main-header a[href]:hover,
+.search-field:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+} */
+/* Выпадающее меню */
+.header-site-navigation .dropdown-menu {
+  font-family: "open_sanslight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  text-transform: none;
+}
+
+/* Номера для страниц слайдера */
+.slider-numbers {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 180.5px;
+  line-height: 180.5px;
+  color: #ffffff;
+}
+
+/* ==============Тело============== */
+
+/* Заголовки разделов */
+.index-columns h2 {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 47.5px;
+  line-height: 47.5px;
+  color: #000000;
+}
+
+/* Маркеры списка компаний */
+.companies-list {
+  list-style: circle;
+}
+
+/* Ссылки на сайты компаний TODO: добавить ховэры и экшены, если допускается добавлять свои стили */
+.companies-list a {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+
+}
+
+/* ==============Подвал============== */
+.main-footer {
+  background-color: #464646;
+  color: #ffffff;
 }
 
 .main-footer .main-logo {
   color: #ffc600;
 }
+
+/* Меню */
+.footer-user-navigation a,
+.footer-site-navigation a {
+  color: #ffffff;
+}
+
+.footer-user-navigation a:hover,
+.footer-site-navigation a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-user-navigation a:active,
+.footer-site-navigation a:active{
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.social-btn{
+  color: #ffffff;
+}
+
+.html-logo{
+  width: 27px;
+  height: 35px;
+  object-fit: contain; /* ? */
+  fill: #ffc600;
+}
+
+.html-logo:hover{
+  opacity: 0.6;
+}
+
+.html-logo:active{
+  opacity: 0.3;
+}
+/* доработать или убрать */
+.click-call{
+  color: inherit;
+}
+/* Ховеры, фокусы и экшены */
+
 
 /* для внутренних страниц */
 /* .main-logo:hover{
@@ -52,99 +210,15 @@ a {
     color: rgba(0, 0, 0, 0.2);
 } */
 
-.main-header {
-  background-color: #f7e296;
-}
-
-
-.site-navigation,
-.user-navigation,
-.site-navigation .dropdown-menu {
-  list-style: none;
-}
-
-.site-navigation .dropdown-menu {
-  font-family: "open_sanslight", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 36px;
-  text-transform: none;
-}
-
-.site-navigation a,
-.user-navigation a {
-  color: #000000;
-}
-
-.site-navigation {
-  font-family: "gilroyextrabold", Arial, sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-/* разобраться с кнопкой и инпутом */
-.search-field {
-  border: none;
-  background-color: transparent;
-  color: rgba(134, 131, 131, 0.3);
-}
-
-.search-field:focus {
-  color: #000000;
-}
-
 /* .search-field {
   width: 441px;
   padding-bottom: 14px;
 } */
 
-.search-field:focus {
+
+/* разобраться с кнопкой и инпутом */
+
+
+/* .search-field:focus {
   border-bottom: 2px solid #000000;
-}
-
-.search-field:hover::placeholder,
-.login-link:hover,
-.compare-link:hover,
-.cart-link:hover,
-.site-navigation a:hover,
-.user-navigation a:hover {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.login-link:active,
-.compare-link:active,
-.cart-link:active,
-.site-navigation a:active,
-.user-navigation a:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.index-columns {
-  line-height: 30px;
-}
-
-.index-columns h2 {
-  font-family: "gilroyextrabold", Arial, sans-serif;
-  font-size: 47.5px;
-  line-height: 47.5px;
-  color: #000000;
-}
-
-.companies-list {
-  list-style: circle;
-}
-
-.companies-list a {
-  font-family: "gilroyextrabold", Arial, sans-serif;
-  line-height: 41px;
-  color: #000000;
-
-}
-
-.button {
-  font-family: "gilroyextrabold", Arial, sans-serif;
-  line-height: 23.5px;
-  letter-spacing: 3.7px;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
-}
+} */
