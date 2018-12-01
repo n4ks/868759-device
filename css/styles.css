@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'OpenSansLight';
   src: url('../fonts/opensans-light-webfont.woff2') format('woff2');
+  /* добавить woff для критерия */
   font-weight: 300;
   font-style: normal;
 
@@ -9,9 +10,27 @@
 @font-face {
   font-family: 'GilroyExtraBold';
   src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2');
+  /* добавить woff для критерия */
   font-weight: 800;
   font-style: normal;
 
+}
+
+@font-face {
+  font-family: 'GilroyLight';
+  src: url('../fonts/gilroylight-webfont.woff2') format('woff2'),
+    url('../fonts/gilroylight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 body {
@@ -32,7 +51,7 @@ a {
 
 /* Кнопки */
 .button {
-  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-family: "GilroyExtraBold", Arial, sans-serif;
   font-size: 16px;
   line-height: 23.5px;
   letter-spacing: 3.7px;
@@ -41,10 +60,10 @@ a {
 
   background-color: #f0c52e;
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
   height: 8px;
-  width: fit-content;
+  /* width: fit-content; */
   padding: 0 14px;
   border: none;
 }
@@ -114,6 +133,10 @@ a {
 .search-btn:hover {
   color: #ffffff;
   background: #000000;
+}
+
+.search-btn:active{
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Навигация */
@@ -327,7 +350,7 @@ a {
 }
 
 /* Навигационная цепочка */
-/* По стайлгайду стили задаются только ко второму элементу, верно? */
+
 .breadcrumbs {
   font-size: 14px;
   line-height: 24px;
@@ -338,7 +361,7 @@ a {
 .breadcrumbs a {
   color: rgba(0, 0, 0, 0.3);
 }
-
+/* По стайлгайду ховер и эктив задаются только ко второму элементу, нужно задавать для "Главной?" */
 .breadcrumbs .breadcrumbs-catalog:hover {
   color: rgba(0, 0, 0, 0.6);
 }
@@ -368,24 +391,38 @@ a {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.filter-input:active +label{
-    color: #000000;
+.filter-input:active+label {
+  color: #000000;
 }
 
-.filter-input:disabled + label{
-    color: #a6a6a6;
+.filter-input:disabled+label {
+  color: #a6a6a6;
 }
 
 .modal {
   display: none;
 }
 
-.catalog-list{
-    list-style: none;
+.catalog-list {
+  list-style: none;
 }
 
-/* catalog-item */
+/* Карточка товара */
 
-.catalog-item:hover{
-    background-color: rgba(238, 238, 238, 0.7);
+.catalog-item a {
+  color: #000000;
 }
+
+.catalog-item h3 {
+  font-family: "GilroyExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.catalog-item-price {
+  font-family: "GilroyLight", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Кнопки на карточке товара */
