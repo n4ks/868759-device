@@ -1,28 +1,25 @@
 @font-face {
-  font-family: 'OpenSansLight';
-  src: url('../fonts/opensans-light-webfont.woff2') format('woff2');
+  font-family: "OpenSansLight";
+  src: url("../fonts/opensans-light-webfont.woff2") format("woff2");
   /* добавить woff для критерия */
   font-weight: 300;
   font-style: normal;
-
 }
 
 @font-face {
-  font-family: 'GilroyExtraBold';
-  src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2');
+  font-family: "GilroyExtraBold";
+  src: url("../fonts/gilroyextrabold-webfont.woff2") format("woff2");
   /* добавить woff для критерия */
   font-weight: 800;
   font-style: normal;
-
 }
 
 @font-face {
-  font-family: 'GilroyLight';
-  src: url('../fonts/gilroylight-webfont.woff2') format('woff2'),
-    url('../fonts/gilroylight-webfont.woff') format('woff');
+  font-family: "GilroyLight";
+  src: url("../fonts/gilroylight-webfont.woff2") format("woff2"),
+    url("../fonts/gilroylight-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
 
 .visually-hidden {
@@ -37,10 +34,10 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "OpenSansLight", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  color: #464646;
+  font-family: "GilroyExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
 
   background-color: #ffffff;
 }
@@ -49,7 +46,6 @@ a {
   text-decoration: none;
 }
 
-/* Кнопки */
 .button {
   font-family: "GilroyExtraBold", Arial, sans-serif;
   font-size: 16px;
@@ -63,7 +59,6 @@ a {
   display: inline-flex;
   align-items: center;
   height: 8px;
-  /* width: fit-content; */
   padding: 0 14px;
   border: none;
 }
@@ -76,51 +71,61 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* Главная страница */
-
-/* Шапка */
 .main-header {
   background-color: #f7e296;
 }
 
-/* Логотип */
-.index-header-logo,
-.inner-header-logo {
-  font-family: "GilroyExtraBold", Arial, sans-serif;
+.main-logo {
   font-size: 48px;
   line-height: 48px;
   text-transform: uppercase;
+}
+
+.main-header .main-logo {
   color: #000000;
 }
 
-/* Поиск */
+/* косяк с логотипом, анимация отрабатывает на главной */
+.main-header .main-logo[href]:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-header .main-logo[href]:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .search-underline {
   display: flex;
   border-bottom: 2px solid #000000;
   width: 441px;
 }
 
-/* Шрифт обрезается, поправить */
-.search-field {
+.search {
+  font-family: "OpenSansLight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
   border: none;
   background-color: transparent;
 
   margin-right: auto;
 }
 
-.search-field::placeholder {
+.search::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.search-field:hover::placeholder {
+.search:hover::placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.search-field:focus {
+.search:focus {
   color: #000000;
 }
 
-.search-btn {
+.search-button {
+  font-family: "OpenSansLight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
   border: none;
   width: 85px;
   height: 49px;
@@ -130,57 +135,60 @@ a {
   background-color: inherit;
 }
 
-.search-btn:hover {
+.search-button:hover {
   color: #ffffff;
   background: #000000;
 }
 
-.search-btn:active{
+.search-button:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* Навигация */
-.header-site-navigation,
-.header-site-navigation .dropdown-menu,
-.header-user-navigation {
+.site-navigation,
+.site-navigation .dropdown-menu,
+.user-navigation,
+.footer-social,
+.catalog-list {
   list-style: none;
 }
 
 .main-navigation {
-  font-family: "GilroyExtraBold", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
   text-transform: uppercase;
-
-  /* color: #000000; */
 }
 
-.header-site-navigation a,
-.header-user-navigation a {
+.user-navigation {
+  font-family: "OpenSansLight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+
+.main-header a {
   color: #000000;
 }
 
-.header-site-navigation a:hover,
-.header-user-navigation a:hover {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.header-user-navigation a:active,
-.header-site-navigation a:active {
+.exit-link a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.header-site-navigation .dropdown-menu {
+.main-header a:hover,
+.main-header a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-header a:active,
+.main-header a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation .dropdown-menu {
   font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
   text-transform: none;
 }
 
-/* Счетчик для слайдера */
-
 .slider-numbers {
-  font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 180.5px;
   line-height: 180.5px;
   color: #ffffff;
@@ -191,23 +199,26 @@ a {
   display: none;
 }
 
-/* Тело */
+.about-us p,
+.contacts p {
+  font-family: "OpenSansLight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+}
 
-/* Заголовки разделов */
 .index-columns h2 {
-  font-family: "GilroyExtraBold";
   font-size: 47.5px;
   line-height: 47.5px;
   color: #000000;
 }
 
-/* Перечень компаний */
 .companies-list {
   list-style: circle;
 }
 
+/* Можно вешать размер шрифта и высоту строки на anchor? или лучше на li? */
 .companies-list a {
-  font-family: "GilroyExtraBold", Arial, sans-serif;
   font-size: 16px;
   line-height: 40px;
   color: #000000;
@@ -221,65 +232,56 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* Подвал */
 .main-footer {
   background-color: #464646;
   color: #ffffff;
 }
 
-/* Логотип */
-.index-footer-logo,
-.inner-footer-logo {
-  font-family: "GilroyExtraBold", Arial, sans-serif;
-  font-size: 48px;
-  line-height: 48px;
-  text-transform: uppercase;
+.main-footer .main-logo {
   color: #ffc600;
 }
 
-/* Навигация */
-.footer-site-navigation,
-.footer-user-navigation {
-  list-style: none;
+.main-footer .main-logo[href]:hover {
+  color: rgba(255, 198, 0, 0.6);
 }
 
-.footer-site-navigation a,
-.footer-user-navigation a {
+.main-footer .main-logo[href]:active {
+  color: rgba(255, 198, 0, 0.3);
+}
+
+.main-footer a {
   color: #ffffff;
 }
 
-.footer-site-navigation a:hover,
-.footer-user-navigation a:hover {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-user-navigation a:active,
-.footer-site-navigation a:active {
+.exit-link a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.header-site-navigation .dropdown-menu {
-  font-family: "OpenSansLight", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 36px;
-  text-transform: none;
+.main-footer a:hover,
+.main-footer a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.main-footer a:active,
+.main-footer a:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-social {
   text-align: center;
 }
 
-/* Соцсети */
-
-.footer-social {
-  list-style: none;
-}
-
-.social-btn {
+.footer-social a {
   color: #ffffff;
 }
 
-/* Телефон */
+.footer-phone,
+.footer-contacts {
+  font-family: "OpenSansLight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
 .footer-phone {
   text-align: right;
 }
@@ -288,70 +290,43 @@ a {
   color: #ffffff;
 }
 
-.footer-phone a:hover {
+/* .footer-phone a:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-phone a:active {
   color: rgba(255, 255, 255, 0.3);
-}
+} */
 
-/* Логотип */
-.footer-copyright {
-  text-align: center;
-}
-
-.html-logo {
+/* перепроверить после того урока где покажут как правильно описывать такие кнопки */
+.htmlacademy-button {
   width: 27px;
   height: 35px;
-  object-fit: contain;
-  /* ? */
+  /* object-fit: contain; */
   fill: #ffc600;
 }
 
-.html-logo:hover {
+.htmlacademy-button:hover {
   opacity: 0.6;
 }
 
-.html-logo:active {
+.htmlacademy-button:active {
   opacity: 0.3;
 }
-
 
 .footer-copyright {
   text-align: right;
 }
 
-/* Страница каталога */
 
-/* Навигация */
-.inner-header-logo:hover {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.inner-header-logo:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.inner-footer-logo:hover {
-  color: rgba(255, 198, 0, 0.6);
-}
-
-.inner-footer-logo:active {
-  color: rgba(255, 198, 0, 0.3);
-}
-
-/* Тело */
 .page-title {
-  font-family: "GilroyExtraBold", Arial, sans-serif;
   font-size: 47.5px;
   line-height: 47.5px;
   color: #000000;
 }
 
-/* Навигационная цепочка */
-
 .breadcrumbs {
+  font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
 
@@ -361,27 +336,21 @@ a {
 .breadcrumbs a {
   color: rgba(0, 0, 0, 0.3);
 }
-/* По стайлгайду ховер и эктив задаются только ко второму элементу, нужно задавать для "Главной?" */
-.breadcrumbs .breadcrumbs-catalog:hover {
+
+.breadcrumbs a[href]:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.breadcrumbs .breadcrumbs-catalog:active {
+.breadcrumbs a[href]:active {
   color: rgba(0, 0, 0, 0.1);
 }
 
-/* Фильтры */
 .filter fieldset {
   border: none;
 }
 
-.filter legend {
-  font-family: "GilroyExtraBold", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-}
-
 .filter ul {
+  font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 14px;
   line-height: 40px;
   list-style: none;
@@ -403,26 +372,148 @@ a {
   display: none;
 }
 
-.catalog-list {
-  list-style: none;
-}
-
-/* Карточка товара */
-
 .catalog-item a {
   color: #000000;
-}
-
-.catalog-item h3 {
-  font-family: "GilroyExtraBold", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .catalog-item-price {
   font-family: "GilroyLight", Arial, sans-serif;
   font-size: 16px;
-  line-height: 24px;
 }
 
-/* Кнопки на карточке товара */
+/* .main-header {
+  width: 1160px;
+  margin-top: 21px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* высота блока ~564px, ширина = контейнер / отступ сверху потом можно переделать на отсуп снизу от логотипов */
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  /* padding-top: 93px; */
+
+}
+
+/* не правильно отображается текст при ширине как на макете */
+.about-us {
+  width: 460px;
+}
+
+/* кнопка в этом блоке странно висит */
+.contacts {
+  width: 560px;
+}
+
+/* нормально отсуп? */
+.companies-list {
+  margin: 20px;
+  padding: 0;
+}
+
+/* .user-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation {
+  display: flex;
+} */
+
+/* отступы у лого и меню разные */
+/* .main-footer{
+  padding: 60px 0;
+} */
+/* нужно задавать ширину если она равна ширине элемента? */
+.main-footer .main-logo {
+  width: 164;
+}
+
+.main-footer .user-navigation {
+  width: 300px;
+}
+
+.footer-contacts {
+  width: 201px;
+  margin: 0;
+}
+
+.main-footer .main-navigation {
+  width: 400px;
+}
+
+.main-footer .footer-phone{
+  width: 164px;
+}
+
+.main-footer .footer-social{
+  width: 160px;
+}
+
+.main-footer .footer-copyright{
+  width: 60px;
+}
+
+/* .main-footer .container{
+  display: flex;
+} */
+
+.main-footer .container-2{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer .user-navigation{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer .container-3{
+  display: flex;
+}
+
+.main-footer .site-navigation{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer .footer-contacts{
+  margin-right: 160px;
+}
+
+.main-footer .footer-phone{
+  margin-left: auto;
+}
+
+.main-footer .container-4{
+  display: flex;
+}
+
+.main-footer .line{
+  margin-right: 420px;
+}
+
+.main-footer .footer-social{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer .footer-copyright{
+  margin-left: auto;
+}
+
+* {
+  background: rgba(20, 64, 121, 0.3);
+}
