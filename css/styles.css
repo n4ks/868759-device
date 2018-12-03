@@ -81,17 +81,15 @@ a {
   text-transform: uppercase;
 }
 
-.main-header .main-logo {
-  color: #000000;
-}
-
 /* косяк с логотипом, анимация отрабатывает на главной */
-.main-header .main-logo[href]:hover {
-  color: rgba(0, 0, 0, 0.6);
+.main-header .main-logo[href]:hover,
+.main-header a[href]:hover {
+  opacity: 0.6;
 }
 
-.main-header .main-logo[href]:active {
-  color: rgba(0, 0, 0, 0.3);
+.main-header .main-logo[href]:active,
+.main-header a[href]:active {
+  opacity: 0.3;
 }
 
 .search-underline {
@@ -254,25 +252,19 @@ a {
 }
 
 .exit-link a {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgb(255, 255, 255, 0.3);
 }
 
-.main-footer a:hover,
-.main-footer a:hover {
-  color: rgba(255, 255, 255, 0.6);
+.main-footer a[href]:hover {
+  opacity: 0.6;
 }
 
-.main-footer a:active,
-.main-footer a:active {
-  color: rgba(255, 255, 255, 0.3);
+.main-footer a[href]:active {
+  opacity: 0.3;
 }
 
 .footer-social {
   text-align: center;
-}
-
-.footer-social a {
-  color: #ffffff;
 }
 
 .footer-phone,
@@ -290,27 +282,19 @@ a {
   color: #ffffff;
 }
 
-/* .footer-phone a:hover {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-phone a:active {
-  color: rgba(255, 255, 255, 0.3);
-} */
-
 /* перепроверить после того урока где покажут как правильно описывать такие кнопки */
-.htmlacademy-button {
+.htmlacademy-button path {
   width: 27px;
   height: 35px;
   /* object-fit: contain; */
   fill: #ffc600;
 }
 
-.htmlacademy-button:hover {
+.htmlacademy-button:hover path {
   opacity: 0.6;
 }
 
-.htmlacademy-button:active {
+.htmlacademy-button:active path {
   opacity: 0.3;
 }
 
@@ -381,12 +365,9 @@ a {
   font-size: 16px;
 }
 
-/* .main-header {
-  width: 1160px;
-  margin-top: 21px;
-  margin-left: auto;
-  margin-right: auto;
-} */
+.main-header {
+  margin-top: 40px;
+}
 
 .container {
   width: 1160px;
@@ -394,126 +375,12 @@ a {
   padding: 0 20px;
 }
 
-/* высота блока ~564px, ширина = контейнер / отступ сверху потом можно переделать на отсуп снизу от логотипов */
-.index-columns {
-  display: flex;
-  justify-content: space-between;
-  /* padding-top: 93px; */
-
-}
-
-/* не правильно отображается текст при ширине как на макете */
-.about-us {
-  width: 460px;
-}
-
-/* кнопка в этом блоке странно висит */
-.contacts {
-  width: 560px;
-}
-
-/* нормально отсуп? */
-.companies-list {
-  margin: 20px;
-  padding: 0;
-}
-
-/* .user-navigation {
-  margin: 0;
-  padding: 0;
-}
-
+.user-navigation,
 .site-navigation {
   margin: 0;
   padding: 0;
 }
 
-.main-navigation {
-  display: flex;
-} */
-
-/* отступы у лого и меню разные */
-/* .main-footer{
-  padding: 60px 0;
-} */
-/* нужно задавать ширину если она равна ширине элемента? */
-.main-footer .main-logo {
-  width: 164;
-}
-
-.main-footer .user-navigation {
-  width: 300px;
-}
-
-.footer-contacts {
-  width: 201px;
-  margin: 0;
-}
-
-.main-footer .main-navigation {
-  width: 400px;
-}
-
-.main-footer .footer-phone{
-  width: 164px;
-}
-
-.main-footer .footer-social{
-  width: 160px;
-}
-
-.main-footer .footer-copyright{
-  width: 60px;
-}
-
-/* .main-footer .container{
-  display: flex;
-} */
-
-.main-footer .container-2{
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-footer .user-navigation{
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-footer .container-3{
-  display: flex;
-}
-
-.main-footer .site-navigation{
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-footer .footer-contacts{
-  margin-right: 160px;
-}
-
-.main-footer .footer-phone{
-  margin-left: auto;
-}
-
-.main-footer .container-4{
-  display: flex;
-}
-
-.main-footer .line{
-  margin-right: 420px;
-}
-
-.main-footer .footer-social{
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-footer .footer-copyright{
-  margin-left: auto;
-}
-
-* {
-  background: rgba(20, 64, 121, 0.3);
+.dropdown-menu {
+  display: none;
 }
