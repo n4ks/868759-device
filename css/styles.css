@@ -72,7 +72,7 @@ a {
 }
 
 .main-header {
-  background-color: #f7e296;
+  padding: 0 20px;
 }
 
 .main-logo {
@@ -82,7 +82,6 @@ a {
 }
 
 /* косяк с логотипом, анимация отрабатывает на главной */
-.main-header .main-logo[href]:hover,
 .main-header a[href]:hover {
   opacity: 0.6;
 }
@@ -109,11 +108,11 @@ a {
 }
 
 .search::placeholder {
-  color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
 }
 
 .search:hover::placeholder {
-  color: rgba(0, 0, 0, 0.6);
+  opacity: 0.6;
 }
 
 .search:focus {
@@ -142,19 +141,21 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.site-navigation,
-.site-navigation .dropdown-menu,
-.user-navigation,
-.footer-social,
+.header-site-navigation,
+.header-site-navigation .dropdown-menu,
+.footer-site-navigation,
+.header-user-navigation,
+.footer-user-navigation .footer-social,
 .catalog-list {
   list-style: none;
 }
 
-.main-navigation {
+.header-site-navigation {
   text-transform: uppercase;
 }
 
-.user-navigation {
+.header-user-navigation,
+.footer-user-navigation {
   font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -169,17 +170,7 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.main-header a:hover,
-.main-header a:hover {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.main-header a:active,
-.main-header a:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.site-navigation .dropdown-menu {
+.header-site-navigation .dropdown-menu {
   font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
@@ -239,12 +230,14 @@ a {
   color: #ffc600;
 }
 
-.main-footer .main-logo[href]:hover {
-  color: rgba(255, 198, 0, 0.6);
+.main-footer .main-logo[href]:hover,
+.main-footer a[href]:hover {
+  opacity: 0.6;
 }
 
-.main-footer .main-logo[href]:active {
-  color: rgba(255, 198, 0, 0.3);
+.main-footer .main-logo[href]:active,
+.main-footer a[href]:active {
+  opacity: 0.3;
 }
 
 .main-footer a {
@@ -255,6 +248,7 @@ a {
   color: rgb(255, 255, 255, 0.3);
 }
 
+/*
 .main-footer a[href]:hover {
   opacity: 0.6;
 }
@@ -262,10 +256,10 @@ a {
 .main-footer a[href]:active {
   opacity: 0.3;
 }
-
-.footer-social {
+*/
+/* .footer-social {
   text-align: center;
-}
+} */
 
 .footer-phone,
 .footer-contacts {
@@ -274,9 +268,9 @@ a {
   line-height: 30px;
 }
 
-.footer-phone {
+/* .footer-phone {
   text-align: right;
-}
+} */
 
 .footer-phone a {
   color: #ffffff;
@@ -286,7 +280,6 @@ a {
 .htmlacademy-button path {
   width: 27px;
   height: 35px;
-  /* object-fit: contain; */
   fill: #ffc600;
 }
 
@@ -301,7 +294,6 @@ a {
 .footer-copyright {
   text-align: right;
 }
-
 
 .page-title {
   font-size: 47.5px;
@@ -365,22 +357,106 @@ a {
   font-size: 16px;
 }
 
+.dropdown-menu {
+  display: none;
+}
+
 .main-header {
   margin-top: 40px;
+  position: relative;
+  /* padding-top: 60px; */
+}
+
+.main-header .container {
+  background-color: #f7e296;
+}
+
+.main-header .main-logo {
+  position: absolute;
+  padding-left: 60px;
+  top: -21px;
 }
 
 .container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
-.user-navigation,
-.site-navigation {
+.main-navigation {
+  padding: 0 60px;
+}
+
+.header-user-navigation,
+.header-site-navigation,
+.footer-user-navigation,
+.footer-site-navigation {
   margin: 0;
   padding: 0;
 }
 
-.dropdown-menu {
-  display: none;
+.header-user-navigation {
+  width: 1040px;
+  display: flex;
+
+  padding-top: 53px;
+}
+
+.header-user-navigation li:first-child {
+  padding-left: 40px;
+  padding-right: 393px;
+}
+
+.header-user-navigation li:nth-child(2) {
+  padding-right: 238px;
+}
+
+.header-user-navigation li:last-child {
+  margin-left: auto;
+}
+
+.header-site-navigation {
+  width: 1040px;
+  display: flex;
+
+  padding-top: 50px;
+}
+
+.header-site-navigation li:first-child {
+  padding-right: 326px;
+}
+
+.header-site-navigation li:nth-child(2) {
+  padding-right: 38px;
+}
+
+.header-site-navigation li:last-child {
+  margin-left: auto;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 93px;
+}
+
+.about-us {
+  width: 460px;
+}
+
+.contacts {
+  width: 560px;
+}
+
+.main-footer {
+  margin-top: 93px;
+}
+
+.main-footer .main-logo{
+  margin: 0px;
+}
+
+.main-footer .contacts,
+.main-footer .phone,
+.main-footer .copyright{
+  margin: 0;
 }
