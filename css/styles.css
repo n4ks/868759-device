@@ -402,13 +402,15 @@ a {
 }
 
 .search-button {
-  position: relative;
-  margin-left: 195px;
+  display: none;
+  position: absolute;
+  top: 42px;
+  left: 400px;
   font-family: "OpenSansLight", Arial, sans-serif;
   
   font-size: 15px;
   border: none;
-  padding: 19px 21px;
+  padding: 17px 21px;
   border-top: 2px solid #000000;
   border-left: 2px solid #000000;
   border-right: 2px solid #000000;
@@ -423,6 +425,10 @@ a {
   background: black;
   left: -355px;
   bottom: 0;
+}
+
+.search:focus~.search-button{
+  display:block;
 }
 
 .main-header .login-link {
@@ -464,9 +470,10 @@ a {
 }
 
 .header-user-navigation {
+
   width: 500px;
   display: flex;
-  margin-left: 127px;
+  /* margin-left: 127px; */
   align-items: center;
 
   background: rgba(34, 25, 100, 0.2);
@@ -606,8 +613,6 @@ a {
 
 .top-header-wrapper{
   display: flex;
-  flex-direction: row;
+justify-content: space-between;
   width: 1040px;
-  /* background: rgba(34, 25, 100, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(34, 25, 100);  */
 }
