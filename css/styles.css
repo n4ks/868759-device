@@ -112,7 +112,6 @@ a {
   opacity: 0.3;
 }
 
-
 .search {
   font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 15px;
@@ -133,8 +132,6 @@ a {
 .search:focus {
   color: #000000;
 }
-
-
 
 .search-button:hover {
   color: #ffffff;
@@ -279,7 +276,6 @@ a {
   color: #ffffff;
 }
 
-/* перепроверить после того урока где покажут как правильно описывать такие кнопки */
 .htmlacademy-button path {
   width: 27px;
   height: 35px;
@@ -406,24 +402,31 @@ a {
 }
 
 .search-button {
-  margin-left: 208px;
-
+  position: relative;
+  margin-left: 195px;
   font-family: "OpenSansLight", Arial, sans-serif;
+  
   font-size: 15px;
-  line-height: 30px;
   border: none;
-  width: 85px;
-  height: 49px;
+  padding: 19px 21px;
   border-top: 2px solid #000000;
   border-left: 2px solid #000000;
   border-right: 2px solid #000000;
   background-color: inherit;
 }
 
+.search-button::before{
+  position: absolute;
+  content: "";
+  width: 441px;
+  height: 2px;
+  background: black;
+  left: -355px;
+  bottom: 0;
+}
+
 .main-header .login-link {
   width: 42px;
-  height: 15px;
-  margin-left: 127px;
 }
 
 .main-header .compare-link {
@@ -447,7 +450,6 @@ a {
 
 .main-header .contacts-link {
   width: 117px;
-  /* тут паддинг 114, но где то косяк с отступами и происходит перенос на другую строку */
   margin-left: 109px;
 }
 
@@ -456,14 +458,19 @@ a {
   margin-left: 65px;
 }
 
-.header-user-navigation,
+/* .header-user-navigation, */
 .header-site-navigation {
   width: 1040px;
 }
 
 .header-user-navigation {
+  width: 500px;
   display: flex;
-  align-items: flex-start;
+  margin-left: 127px;
+  align-items: center;
+
+  background: rgba(34, 25, 100, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(34, 25, 100);
 }
 
 .header-site-navigation {
@@ -595,4 +602,12 @@ a {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+}
+
+.top-header-wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 1040px;
+  /* background: rgba(34, 25, 100, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(34, 25, 100);  */
 }
