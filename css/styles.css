@@ -366,7 +366,8 @@ a {
   width: 163px;
   height: 36px;
   position: absolute;
-  top: -21px;
+  top: -25px;
+  left: 58px;
 }
 
 .header-user-navigation,
@@ -378,7 +379,6 @@ a {
 .header-site-navigation a,
 .header-user-navigation a {
   display: block;
-  /* как вычислять паддинг кнопок на таком макете? */
 }
 
 .container {
@@ -392,13 +392,13 @@ a {
 .main-header .container {
   width: 1040px;
   padding: 0 60px;
-  padding-top: 53px;
+  padding-top: 41px;
   position: relative;
 }
 
 .search {
   width: 108px;
-  padding-left: 40px;
+  padding-left: 39px;
 }
 
 .search-button {
@@ -431,60 +431,58 @@ a {
   display: block;
 }
 
-.main-header .login-link {
-  width: 42px;
-}
-
-.main-header .compare-link {
-  width: 69px;
-  margin-left: 238px;
-}
-
-.main-header .catalog-link {
-  width: 220px;
-}
-
-.main-header .delivery-link {
-  width: 121px;
-  margin-left: 326px;
-}
-
-.main-header .guarantee-link {
-  width: 109px;
-  margin-left: 38px;
-}
-
-.main-header .contacts-link {
-  width: 117px;
-  margin-left: 109px;
-}
-
-.main-header .cart-link {
-  width: 58px;
-  margin-left: 65px;
-}
-
-/* .header-user-navigation, */
 .header-site-navigation {
-  width: 1040px;
+  /* width: 1040px; */
+
+  display: flex;
+  align-items: flex-start;
+  /* flex-wrap: wrap; */
 }
 
 .header-user-navigation {
-
   width: 500px;
   display: flex;
-  /* margin-left: 127px; */
   align-items: center;
-
   background: rgba(34, 25, 100, 0.2);
   box-shadow: inset 0 0 0 2px rgb(34, 25, 100);
 }
 
-.header-site-navigation {
-  display: flex;
-  align-items: flex-start;
-  /* flex-wrap: wrap; */
-  padding-top: 54px;
+.header-user-navigation li:first-child {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.header-user-navigation li {
+  margin-left: 38px;
+}
+
+.login-link,
+.compare-link,
+.cart-link {
+  padding-left: 27px;
+}
+
+.main-navigation {
+  padding-top: 39px;
+}
+
+.header-site-navigation li:first-child {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+
+.catalog-link {
+  padding-right: 35px;
+}
+
+.header-site-navigation li:nth-child(3) {
+  margin-left: 34px;
+}
+
+.header-site-navigation li:last-child {
+  margin-left: 109px;
+  margin-right: -4px;
 }
 
 .index-columns {
