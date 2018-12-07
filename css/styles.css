@@ -222,7 +222,6 @@ a {
   list-style: circle;
 }
 
-/* Можно вешать размер шрифта и высоту строки на anchor? или лучше на li? */
 .companies-list a {
   font-size: 16px;
   line-height: 40px;
@@ -443,8 +442,8 @@ a {
   width: 500px;
   display: flex;
   align-items: center;
-  background: rgba(34, 25, 100, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(34, 25, 100);
+  /* background: rgba(34, 25, 100, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(34, 25, 100); */
 }
 
 .header-user-navigation li:first-child {
@@ -460,6 +459,51 @@ a {
 .compare-link,
 .cart-link {
   padding-left: 27px;
+  position: relative;
+}
+
+.login-link::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  top: 9px;
+  left: 0px;
+  background-image: url("../img/user-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.compare-link::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 11px;
+  left: 7px;
+  background-image: url("../img/compare-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.cart-link::before  {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  top: 9px;
+  left: 4px;
+  display: inline-block;
+  background-image: url("../img/cart-icon.svg");
+  /* -webkit-mask: url("../img/cart-icon.svg"); */
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.footer-user-navigation .login-link::before,
+.footer-user-navigation .compare-link::before,
+.footer-user-navigation .cart-link::before {
+  background-color: #ffc600;
 }
 
 .main-navigation {
@@ -473,7 +517,20 @@ a {
 
 
 .catalog-link {
+  position: relative;
   padding-right: 35px;
+}
+
+.catalog-link::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: 3px;
+  right: 8px;
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .header-site-navigation li:nth-child(3) {
