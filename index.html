@@ -238,17 +238,20 @@
     <h2 class="visually-hidden">Обратная связь</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="feedback-top-wrapper">
-        <label for="feedback-name">Ваше имя:</label>
-        <input type="text" name="name" placeholder="Имя Фамилия" id="feedback-name" required>
-        <label for="feedback-email">Ваш e-mail:</label>
+        <div class="name-wrapper">
+          <label for="feedback-name">Ваше имя:</label>
+          <input type="text" name="name" placeholder="Имя Фамилия" id="feedback-name" required>
+        </div>
+        <div class="email-wrapper">
+          <label for="feedback-email">Ваш e-mail:</label>
           <input type="email" name="email" placeholder="email@example.com" id="feedback-email" required>
-
+        </div>
       </div>
       <div class="feedback-middle-wrapper">
-        <label>
-          Текст письма:
-          <textarea name="feedback-text" cols="50" rows="4" placeholder="В свободной форме" required></textarea>
-        </label>
+        <div class="feedback-text-wrapper">
+          <label for="feedback-text">Текст письма</label>
+          <textarea name="feedback-text" cols="50" rows="4" placeholder="В свободной форме" id="feedback-text" required></textarea>
+        </div>
       </div>
       <div class="feedback-bottom-wrapper">
         <button class="button" type="submit">Отправить</button>

@@ -933,29 +933,43 @@ a {
   /* для теста */
   height: 553px;
   /* display: flex; */
-  /* flex-direction: column; */
-    background: rgba(34, 25, 100, 0.2);
+  /* flex-direction: row; */
+  background: rgba(34, 25, 100, 0.2);
   box-shadow: inset 0 0 0 2px rgb(34, 25, 100);
 }
 
 
-
 .feedback-top-wrapper {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
 }
 
-.modal-feedback label,input, textarea{
-  /* display: block; */
+.feedback-form input{
+  width: 360px;
 }
 
-.feedback-middle-wrapper{
-  /* display: flex; */
+/* .modal-feedback .feedback-form {
+  display: flex;
+  flex-direction: row;
+} */
+
+
+.feedback-middle-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
 }
 
-.feedback-bottom-wrapper{
-  /* display: flex; */
-}
+/*
+.feedback-bottom-wrapper {
+  display: flex;
+  flex-direction: column;
+} */
 
-.feedback-form{
+.feedback-form {
+  margin: 0 auto;
   width: 760px;
 }
