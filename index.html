@@ -13,9 +13,12 @@
     <div class="container">
       <a class="main-logo">Device</a>
       <div class="top-header-wrapper">
-        <input class="search" type="text" placeholder="Поиск по сайту" id="search">
-        <button class="search-button" type="button">Найти</button>
-        <label class="visually-hidden" for="search">Поиск по сайту</label>
+        <div class="search-wrapper">
+          <!--псевдоэлементы не привязываются к инпутам с помощью чистого CSS, пришлось добавить контейнер-->
+          <input class="search" type="text" placeholder="Поиск по сайту" id="search">
+          <button class="search-button" type="button">Найти</button>
+          <label class="visually-hidden" for="search">Поиск по сайту</label>
+        </div>
         <ul class="header-user-navigation">
           <li><a class="login-link" href="#">Войти</a></li>
           <li><a class="compare-link" href="#">Сравнить</a></li>
@@ -24,7 +27,7 @@
       </div>
       <nav class="main-navigation">
         <ul class="header-site-navigation">
-          <li><a class="catalog-link" href="catalog.html">Каталог товаров</a>
+          <li class="catalog-link"><a href="catalog.html">Каталог товаров</a>
             <ul class="dropdown-menu">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Фитнес-браслеты</a></li>
@@ -34,26 +37,103 @@
               <li><a href="#">Экшн-камеры</a></li>
             </ul>
           </li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="guarantee.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li class="delivery-link"><a href="delivery.html">Доставка</a></li>
+          <li class="guarantee-link"><a href="guarantee.html">Гарантия</a></li>
+          <li class="contacts-link"><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <!-- <div class="slider">
-      <div class="slider-numbers">
-        <span class="number">01</span>
-        <span class="number">02</span>
-        <span class="number">03</span>
-      </div>
-    </div> -->
+    <section class="slider">
+      <h2 class="visually-hidden">Товары</h2>
+      <!-- <div class="slider-controls">
+        <i class="active"></i>
+        <i></i>
+        <i></i>
+      </div> -->
+      <ul class="slider-list">
+        <li class="slider-item">
+          <div class="slider-item-picture">
+            <img src="img/selfie-stick-slider-1.png" width="384px" height="486px" alt="Палка для селфи">
+          </div>
+          <div class="slider-item-description">
+            <h3 class="page-subtitle title-notch-white slider-num one">Делай селфи,<br> как Бен Стиллер!</h3>
+            <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
+              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <a class="button" href="#">Подробнее</a>
+            <table class="slider-item-specifications">
+              <thead>
+                <tr>
+                  <th>Длина палки</th>
+                  <th>Вес палки</th>
+                  <th>Материал</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="slider-item">
+          <div class="slider-item-picture">
+            <img src="img/fitness-bracelet-slider-2.png" alt="Фитнес-браслет">
+          </div>
+          <div class="slider-item-description">
+            <h3 class="page-subtitle title-notch-white slider-num two">Худеем<br>правильно!</h3>
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a class="button" href="#">Подробнее</a>
+            <table class="slider-item-specifications">
+              <thead>
+                <tr>
+                  <th>Без подзарядки</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>48 часов</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="slider-item">
+          <div class="slider-item-picture">
+            <img src="img/quadcopter-slider-3.png" alt="Квадрокоптер" class="slider-item-img">
+          </div>
+          <div class="slider-item-description">
+            <h3 class="page-subtitle title-notch-white slider-num three">Порхает как бабочка,<br>жалит как пчела!</h3>
+            <p>Этот обычный, на первый взгляд, квадрокоптеп оснащен мощным лазером, замаскированным под стандартную
+              камеру.</p>
+            <a class="button" href="#">Подробнее</a>
+            <table class="slider-item-specifications">
+              <thead>
+                <tr>
+                  <th>Дальность полета</th>
+                  <th>Радиус поражения</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+      </ul>
+    </section>
     <h1 class="visually-hidden">Интернет-магазин техники «Device»</h1>
     <div class="index-columns">
       <section class="about-us">
-        <h2 class="page-subtitle title-notch">О нас</h2>
+        <h2 class="page-subtitle title-notch-black">О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
           компаниями:</p>
@@ -65,7 +145,7 @@
         <a href="about-us.html" class="button">Подробнее о нас</a>
       </section>
       <section class="contacts">
-        <h2 class="page-subtitle title-notch">Контакты</h2>
+        <h2 class="page-subtitle title-notch-black">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
           Всякое бывает.</p>
         <div class="map">
@@ -99,10 +179,8 @@
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
-        <p class="footer-phone"><a href="tel:+74954959595">Тел.: +7 (495)-95-95</a></p>
+        <p class="footer-phone"><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
       </div>
-      <!-- тут будет полоска -->
-      <!-- <span class="line">======</span> -->
       <div class="bottom-footer-wrapper">
         <ul class="footer-social">
           <li><a class="social-button social-button-facebook" href="#"><span class="visually-hidden">Facebook</span><svg
@@ -159,19 +237,22 @@
   <section class="modal modal-feedback">
     <h2 class="visually-hidden">Обратная связь</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <label>
-        Ваше имя:
-        <input type="text" name="name" placeholder="Имя Фамилия" required>
-      </label>
-      <label>
-        Ваш e-mail:
-        <input type="email" name="email" placeholder="email@example.com" required>
-      </label>
-      <label>
-        Текст письма:
-        <textarea name="feedback-text" cols="50" rows="4" placeholder="В свободной форме" required></textarea>
-      </label>
-      <button class="button" type="submit">Отправить</button>
+      <div class="feedback-top-wrapper">
+        <label for="feedback-name">Ваше имя:</label>
+        <input type="text" name="name" placeholder="Имя Фамилия" id="feedback-name" required>
+        <label for="feedback-email">Ваш e-mail:</label>
+          <input type="email" name="email" placeholder="email@example.com" id="feedback-email" required>
+
+      </div>
+      <div class="feedback-middle-wrapper">
+        <label>
+          Текст письма:
+          <textarea name="feedback-text" cols="50" rows="4" placeholder="В свободной форме" required></textarea>
+        </label>
+      </div>
+      <div class="feedback-bottom-wrapper">
+        <button class="button" type="submit">Отправить</button>
+      </div>
       <button class="modal-close" type="button">Закрыть</button>
     </form>
   </section>
