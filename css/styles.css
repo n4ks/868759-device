@@ -557,6 +557,8 @@ img {
 
 .filter fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filter ul {
@@ -566,16 +568,75 @@ img {
   list-style: none;
 }
 
-.filter-input:hover+label {
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+
+  width: 23px;
+  height: 23px;
+  top: 8px;
+  left: -41px;
+  background-image: url("../img/checkbox-off.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+
+  width: 27px;
+  height: 23px;
+  left: -41px;
+  top: 8px;
+  background-image: url("../img/checkbox-on.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.filter-input:hover + label {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.filter-input:active+label {
+.filter-input:active + label {
   color: #000000;
 }
 
-.filter-input:disabled+label {
+.filter-input:disabled + label {
   color: #a6a6a6;
+}
+
+.filter {
+  margin-top: 291px;
+}
+
+.filter legend {
+  margin-bottom: 3px;
+  letter-spacing: 0.3px;
+}
+
+.filter fieldset {
+  letter-spacing: -0.1px;
+}
+
+.filter .filter-color {
+  margin-bottom: 29px;
+}
+
+.filter .filter-bluetooth {
+  margin-bottom: 26px;
+}
+
+.filter .button {
+  padding: 0 40px;
+
 }
 
 .modal {
@@ -881,7 +942,7 @@ img {
 }
 
 .inner-page .page-title {
-  margin: 0;
+  margin: 0 0 23px 0;
   padding: 0;
   font-size: 47.5px;
   line-height: 47.5px;
@@ -890,19 +951,19 @@ img {
 }
 
 .breadcrumbs {
-  margin: 23px 0 0 0;
+  margin: 0 0 47px 0;
   padding: 0;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
 
-.breadcrumbs li{
+.breadcrumbs li {
   position: relative;
   margin-right: 40px;
 }
 
-.breadcrumbs li::after{
+.breadcrumbs li::after {
   content: "";
   position: absolute;
   width: 4px;
@@ -914,11 +975,11 @@ img {
   right: -22px;
 }
 
-.breadcrumbs li:last-child{
+.breadcrumbs li:last-child {
   margin-right: 0;
 }
 
-.breadcrumbs li:last-child::after{
+.breadcrumbs li:last-child::after {
   display: none;
 }
 
@@ -949,7 +1010,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 138px 0 0 0;
 }
 
 .top-header-wrapper {
