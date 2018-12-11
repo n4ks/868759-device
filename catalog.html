@@ -96,7 +96,7 @@
                   id="filter-bluetooth-yes" checked>
                 <label for="filter-bluetooth-yes">Есть</label>
               </li>
-              <li>
+              <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no"
                   id="filter-bluetooth-no">
                 <label for="filter-bluetooth-no">Нет</label>
@@ -111,24 +111,39 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <img class="catalog-item-image" src="img/newbie-selfie.jpg" width="360" height="380" alt="Любительская селфи-палка">
-            <h3><a href="#">Любительская селфи-палка</a></h3>
-            <span class="catalog-item-price">500 руб.</span>
+            <div class="catalog-item-info">
+              <h3><a href="#">Любительская селфи-палка</a></h3>
+              <span class="catalog-item-price">500 руб.</span>
+            </div>
           </li>
           <li class="catalog-item">
             <img class="catalog-item-image" src="img/professional-selfie.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-            <h3><a href="#">Профессиональная селфи-палка</a></h3>
-            <span class="catalog-item-price">1500 руб.</span>
+            <div class="catalog-item-info">
+              <h3><a href="#">Профессиональная<br> селфи-палка</a></h3>
+              <span class="catalog-item-price">1 500 руб.</span>
+            </div>
           </li>
           <li class="catalog-item">
             <img class="catalog-item-image" src="img/underwater-selfie.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-            <h3><a href="#">Непотопляемая селфи-палка</a></h3>
-            <span class="catalog-item-price">2500 руб.</span>
+            <div class="catalog-item-info">
+              <h3><a href="#">Непотопляемая селфи-палка</a></h3>
+              <span class="catalog-item-price">2 500 руб.</span>
+            </div>
           </li>
           <li class="catalog-item">
             <img class="catalog-item-image" src="img/follow-me-selfie.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-            <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
-            <span class="catalog-item-price">4 900 руб.</span>
+            <div class="catalog-item-info">
+              <h3><a href="#">Селфи-палка «Следуй за<br> мной»</a></h3>
+              <span class="catalog-item-price">4 900 руб.</span>
+            </div>
           </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-button"><button>Назад</button></li>
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-button"><button>Вперед</button></li>
         </ul>
       </section>
     </div>
@@ -158,15 +173,19 @@
       </div>
       <div class="bottom-footer-wrapper">
         <ul class="footer-social">
-          <li><a class="social-button social-button-facebook" href="#"><span class="visually-hidden">Facebook</span><svg
+          <li>
+            <a class="social-button social-button-facebook" href="#"><span class="visually-hidden">Facebook</span><svg
                 version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32"
                 xml:space="preserve">
                 <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16c8.837,0,16-7.164,16-16S24.837,0,16,0z M20.062,9.455h-3.021
                v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H11v-3.445h3.021V9.455c0-1.902,1.353-3.445,3.021-3.445h3.021V9.455z" />
-              </svg></a></li>
-          <li><a class="social-button social-button-instagram" href="#"><span class="visually-hidden">Instragram</span><svg
-                version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-button social-button-instagram" href="#"><span class="visually-hidden">Instragram</span>
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32"
                 xml:space="preserve">
                 <g>
@@ -179,10 +198,13 @@
                   M23.955,21.698c0,1.254-1.025,2.279-2.279,2.279H10.279C9.026,23.978,8,22.952,8,21.698V10.302c0-1.253,1.026-2.279,2.279-2.279
                  h11.396c1.254,0,2.279,1.026,2.279,2.279V21.698z" />
                 </g>
-              </svg></a></li>
-          <li><a class="social-button social-button-twitter" href="#"><span class="visually-hidden">Twitter</span><svg
-                version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-button social-button-twitter" href="#"><span class="visually-hidden">Twitter</span>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
                 <g id="Layer_1">
                 </g>
                 <g id="Layer_2">
@@ -194,7 +216,9 @@
                  c0.227-2.214,1.24-3.699,3.168-4.325c1.84-0.479,3.255,0.26,3.901,1.138c0.737-0.224,1.453-0.466,2.193-0.685
                  c-0.004,0.833-0.569,1.463-0.935,1.709c0.747,0.165,1.423-0.475,1.423-0.475C25.467,11.818,24.557,12.58,23.944,12.809z" />
                 </g>
-              </svg></a></li>
+              </svg>
+            </a>
+          </li>
         </ul>
         <p class="footer-copyright">
           <a class="htmlacademy-button" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Интенсив htmlacademy.ru">
