@@ -58,11 +58,16 @@
     </ul>
     <div class="catalog-columns">
       <section class="filter">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <h2>Фильтр:</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filter-count">
+            <legend>Стоимость</legend>
+            <!-- Заглушка -->
+            <input type="range">
+          </fieldset>
           <fieldset class="filter-color">
             <legend>Цвет</legend>
-            <ul>
+            <ul class="filter-color-list">
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black"
                   checked>
@@ -90,7 +95,7 @@
           </fieldset>
           <fieldset class="filter-bluetooth">
             <legend>Bluetooth</legend>
-            <ul>
+            <ul class="filter-bluetooth-list">
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes"
                   id="filter-bluetooth-yes" checked>
@@ -139,11 +144,11 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-button"><button>Назад</button></li>
+          <li class="pagination-button pagination-button-back"><button type="button">Назад</button></li>
           <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-button"><button>Вперед</button></li>
+          <li class="pagination-button pagination-button-next"><button type="button">Вперед</button></li>
         </ul>
       </section>
     </div>
