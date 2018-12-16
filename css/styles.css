@@ -212,7 +212,8 @@ img {
 .footer-user-navigation,
 .catalog-list,
 .companies-list,
-.dropdown-menu ul {
+.dropdown-menu ul,
+.popular-menu-list {
   list-style: none;
 }
 
@@ -1369,4 +1370,31 @@ img {
 
 .button-add-compare:active {
   opacity: 0.2;
+}
+
+
+.popular-item-link {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.popular-list-item {
+  width: 160px;
+}
+
+.popular-menu-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-list-item .popular-item-link{
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-item-link .popular-item-logo{
+  order: -1;
 }
