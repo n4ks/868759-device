@@ -14,7 +14,6 @@
       <a class="main-logo">Device</a>
       <div class="top-header-wrapper">
         <div class="search-wrapper">
-          <!--псевдоэлементы не привязываются к инпутам с помощью чистого CSS, пришлось добавить контейнер-->
           <input class="search" type="text" placeholder="Поиск по сайту" id="search">
           <button class="search-button" type="button">Найти</button>
           <label class="visually-hidden" for="search">Поиск по сайту</label>
@@ -60,18 +59,21 @@
   <main class="container">
     <section class="slider">
       <h2 class="visually-hidden">Товары</h2>
-      <!-- <div class="slider-controls">
-        <i class="active"></i>
-        <i></i>
-        <i></i>
-      </div> -->
+      <div class="slider-controls">
+        <label for="item-1">Первый</label>
+        <label for="item-2">Второй</label>
+        <label for="item-3">Третий</label>
+        <input type="radio" class="item-1" id="item-1" name="toggle" checked>
+        <input type="radio" class="item-2" id="item-2" name="toggle">
+        <input type="radio" class="item-3" id="item-3" name="toggle">
+      </div>
       <ul class="slider-list">
         <li class="slider-item">
           <div class="slider-item-picture">
             <img src="img/selfie-stick-slider-1.png" width="384px" height="486px" alt="Палка для селфи">
           </div>
           <div class="slider-item-description">
-            <h3 class="page-subtitle title-notch-white slider-num one">Делай селфи,<br> как Бен Стиллер!</h3>
+            <h3 class="page-subtitle title-notch-white">Делай селфи,<br> как Бен Стиллер!</h3>
             <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a class="button" href="#">Подробнее</a>
@@ -98,7 +100,7 @@
             <img src="img/fitness-bracelet-slider-2.png" alt="Фитнес-браслет">
           </div>
           <div class="slider-item-description">
-            <h3> class="page-subtitle title-notch-white slider-num two">Худеем<br>правильно!</h3>
+            <h3 class="page-subtitle title-notch-white">Худеем<br>правильно!</h3>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a class="button" href="#">Подробнее</a>
             <table class="slider-item-specifications">
@@ -120,7 +122,7 @@
             <img src="img/quadcopter-slider-3.png" alt="Квадрокоптер" class="slider-item-img">
           </div>
           <div class="slider-item-description">
-            <h3 class="page-subtitle title-notch-white slider-num three">Порхает как бабочка,<br>жалит как пчела!</h3>
+            <h3 class="page-subtitle title-notch-white">Порхает как бабочка,<br>жалит как пчела!</h3>
             <p>Этот обычный, на первый взгляд, квадрокоптеп оснащен мощным лазером, замаскированным под стандартную
               камеру.</p>
             <a class="button" href="#">Подробнее</a>
@@ -152,7 +154,7 @@
         </li>
         <li class="popular-list-item">
           <a class="popular-item-link" href="#">
-            <h3>Моноподы для селфи</h3>
+            <h3>Моноподы<br>для селфи</h3>
             <img class="popular-item-logo" src="img/popular-2.svg" width="86px" height="117px" alt="Моноподы для селфи">
           </a>
         </li>
