@@ -304,9 +304,13 @@ img {
   max-width: 500px;
   line-height: 55px;
   margin: 0;
-  padding-top: 43px;
-  padding-bottom: 19px;
-  letter-spacing: 0.4px;
+  padding-top: 44px;
+  padding-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.slider-item .button {
+  padding: 0 42px;
 }
 
 .page-subtitle.title-notch-white {
@@ -345,12 +349,22 @@ img {
   content: "03";
 } */
 
+.about-us p,
+.contacts p,
+.slider-item p {
+  font-family: "OpenSansLight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+  margin: 0;
+  padding: 0;
+}
+
 .slider-item p {
   max-width: 485px;
-  margin: 0;
+  line-height: 30px;
   letter-spacing: 0.2px;
-  padding-bottom: 52px;
-
+  padding-bottom: 50px;
 }
 
 .slider-list {
@@ -369,8 +383,8 @@ img {
   font-size: 180.5px;
   line-height: 180.5px;
   color: #ffffff;
-  top: 0px;
-  right: 0px;
+  top: -15px;
+  right: -12px;
 }
 
 .slider-item {
@@ -432,17 +446,6 @@ img {
   font-size: 36px;
   line-height: 48px;
   letter-spacing: 0.4px;
-}
-
-.about-us p,
-.contacts p,
-.slider-item p {
-  font-family: "OpenSansLight", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  color: #464646;
-  margin: 0;
-  padding: 0;
 }
 
 .about-us .page-subtitle,
@@ -888,7 +891,7 @@ img {
   position: relative;
 }
 
-.login-link::before {
+.main-header .login-link::before {
   content: "";
   position: absolute;
   width: 13px;
@@ -900,7 +903,13 @@ img {
   background-position: 0 0;
 }
 
-.compare-link::before {
+.login-link path,
+.compare-link path,
+.cart-link path {
+  fill: #ffc600;
+}
+
+.main-header .compare-link::before {
   position: absolute;
   content: "";
   width: 10px;
@@ -912,7 +921,7 @@ img {
   background-position: 0 0;
 }
 
-.cart-link::before {
+.main-header .cart-link::before {
   position: absolute;
   content: "";
   width: 12px;
