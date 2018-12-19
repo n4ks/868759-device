@@ -910,7 +910,6 @@ img {
 .index-columns {
   display: flex;
   justify-content: space-between;
-  padding-top: 132px;
 }
 
 .about-us {
@@ -1417,6 +1416,7 @@ img {
   background: #e5e5e5;
   padding-bottom: 96px;
   margin-top: 181px;
+  margin-bottom: 95px;
 }
 
 .slider-advantages .container {
@@ -1535,20 +1535,40 @@ img {
   background-image: url("../img/credit.svg");
 }
 
+.manufacturers {
+  margin-bottom: 139px;
+}
+
 .manufacturers-list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .manufacturers-list li {
+  padding: 0;
+  margin: 0;
+  padding-right: 35px;
   display: inline-block;
 }
 
-.manufacturers-list-item a img {
+.manufacturers-list li:last-child {
+  padding-right: 0;
+}
+
+/* Не работает в IE */
+.manufacturers-list-item img {
+  filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  /* filter: url(grayscale.svg); Firefox 4+ */
-  filter: gray; /* IE 6-9 */
+}
+
+.manufacturers-list-item img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
 }
