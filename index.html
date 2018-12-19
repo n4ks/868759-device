@@ -56,7 +56,8 @@
     </div>
   </header>
 
-  <main class="container">
+  <main>
+    <div class="container">
     <section class="slider">
       <h2 class="visually-hidden">Товары</h2>
       <div class="slider-controls">
@@ -76,7 +77,7 @@
             <h3 class="page-subtitle title-notch-white">Делай селфи,<br> как Бен Стиллер!</h3>
             <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a class="button" href="#">Подробнее</a>
+            <a class="button slider-button" href="#">Подробнее</a>
             <table class="slider-item-specifications">
               <colgroup>
                 <col>
@@ -107,7 +108,7 @@
           <div class="slider-item-description">
             <h3 class="page-subtitle title-notch-white">Худеем<br>правильно!</h3>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <a class="button" href="#">Подробнее</a>
+            <a class="button slider-button" href="#">Подробнее</a>
             <table class="slider-item-specifications">
               <thead>
                 <tr>
@@ -130,7 +131,7 @@
             <h3 class="page-subtitle title-notch-white">Порхает как бабочка,<br>жалит как пчела!</h3>
             <p>Этот обычный, на первый взгляд, квадрокоптеп оснащен мощным лазером, замаскированным под стандартную
               камеру.</p>
-            <a class="button" href="#">Подробнее</a>
+            <a class="button slider-button" href="#">Подробнее</a>
             <table class="slider-item-specifications">
               <thead>
                 <tr>
@@ -153,42 +154,75 @@
       <ul class="popular-menu-list">
         <li class="popular-list-item">
           <a class="popular-item-link" href="#">
+            <span class="popular-item-logo vr-logo"></span>
             <h3>Виртуальная реальность</h3>
-            <img class="popular-item-logo" src="img/popular-1.svg" width="97px" height="55px" alt="Виртуальная реальность">
           </a>
         </li>
         <li class="popular-list-item">
           <a class="popular-item-link" href="#">
+            <span class="popular-item-logo selfie-logo"></span>
             <h3>Моноподы<br>для селфи</h3>
-            <img class="popular-item-logo" src="img/popular-2.svg" width="86px" height="117px" alt="Моноподы для селфи">
           </a>
         </li>
         <li class="popular-list-item">
           <a class="popular-item-link" href="#">
+            <span class="popular-item-logo camera-logo"></span>
             <h3>Экшн-камеры</h3>
-            <img class="popular-item-logo" src="img/popular-3.svg" width="71px" height="87px" alt="Экшн-камеры">
           </a>
         </li>
         <li class="popular-list-item">
           <a class="popular-item-link" href="#">
+            <span class="popular-item-logo fitness-logo"></span>
             <h3>Фитнес-браслеты</h3>
-            <img class="popular-item-logo" src="img/popular-4.svg" width="107px" height="65px" alt="Фитнес-браслеты">
           </a>
         </li>
         <li class="popular-list-item">
           <a class="popular-item-link" href="#">
+            <span class="popular-item-logo clock-logo"></span>
             <h3>Умные часы</h3>
-            <img class="popular-item-logo" src="img/popular-5.svg" width="56px" height="98px" alt="Умные часы">
           </a>
         </li>
         <li class="popular-list-item">
           <a class="popular-item-link" href="#">
+            <span class="popular-item-logo quadcopter-logo"></span>
             <h3>Квадрокоптеры</h3>
-            <img class="popular-item-logo" src="img/popular-6.svg" width="132px" height="69px" alt="Квадрокоптеры">
           </a>
         </li>
       </ul>
     </section>
+  </div>
+    <section class="slider-advantages">
+      <div class="container">
+        <h2 class="visually-hidden">Преимущества</h2>
+      <ul class="slider-advantages-menu">
+        <li class="slider-advantages-menu-item">
+          <button class="button slider-advantages-button">Доставка</button>
+        </li>
+        <li class="slider-advantages-menu-item">
+          <button class="button slider-advantages-button">Гарантия</button>
+        </li>
+        <li class="slider-advantages-menu-item">
+          <button class="button slider-advantages-button">Кредит</button>
+        </li>
+      </ul>
+      <ul class="slider-advantages-list">
+        <li class="slider-advantages-description description-delivery">
+          <h3 class=page-subtitle>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо<br>заработаем,
+            поднимая его на ваш этаж.</p>
+        </li>
+        <li class="slider-advantages-description description-warranty">
+          <h3 class="page-subtitle">Гарантия</h3>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+        </li>
+        <li class="slider-advantages-description description-credit">
+          <h3 class="page-subtitle">Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+        </li>
+      </ul>
+      </div>
+    </section>
+    <div class="container">
     <h1 class="visually-hidden">Интернет-магазин техники «Device»</h1>
     <div class="index-columns">
       <section class="about-us">
@@ -217,6 +251,7 @@
         <a href="#" class="button">Напишите нам</a>
       </section>
     </div>
+  </div>
   </main>
 
   <footer class="main-footer">
