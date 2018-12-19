@@ -927,10 +927,6 @@ img {
   width: 472px;
 }
 
-/* .about-us p:first-child{
-  padding-top: 3px;
-} */
-
 .contacts {
   width: 560px;
 }
@@ -1469,6 +1465,7 @@ img {
 }
 
 .slider-advantages-description {
+  position: relative;
   display: none;
 }
 
@@ -1496,16 +1493,54 @@ img {
   letter-spacing: 0.3px;
 }
 
-.button.slider-advantages-button-delivery {
+.slider-advantages-menu-item:nth-child(1) .button {
   padding: 0 19px;
 }
 
-.button.slider
-
-.button.slider-advantages-button-warranty {
+.slider-advantages-menu-item:nth-child(2) .button {
   padding: 0 24px;
 }
 
-.button.slider-advantages-button-credit {
+.slider-advantages-menu-item:nth-child(3) .button{
   padding: 0 37px;
+}
+
+.slider-advantages-menu-item .button:focus {
+  color: #f7e184;
+}
+
+.slider-advantages-menu-item .button:focus::after {
+  padding: 16px 116px 16px 0;
+  background: #000000;
+}
+
+.slider-advantages-description::after {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.slider-advantages-description.description-delivery::after {
+  width: 136px;
+  height: 164px;
+  top: 11px;
+  right: -234px;
+  background-image: url("../img/delivery.svg");
+}
+
+.slider-advantages-description.description-warranty::after {
+  width: 171px;
+  height: 194px;
+  top: -13px;
+  right: -254px;
+  background-image: url("../img/warranty.svg");
+}
+
+.slider-advantages-description.description-credit::after {
+  width: 156px;
+  height: 186px;
+    top: -13px;
+  right: -230px;
+  background-image: url("../img/credit.svg");
 }
