@@ -1572,3 +1572,72 @@ img {
   -ms-filter: grayscale(0%);
   -o-filter: grayscale(0%);
 }
+
+
+.price-controls {
+  font-family: "GilroyLight", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  opacity: 0.2;
+  width: 202px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #dbdbdb;
+  /* Временный отступ */
+  margin-bottom: 20px;
+}
+
+.range-controls .bar {
+  height: 2px;
+  background: #91c92f;
+  width: 60%;
+}
+
+.range-controls {
+  position: relative;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: -11px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background: #dbdbdb;
+  border-radius: 50%;
+
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: -12px;
+}
+
+.range-controls .toggle-max {
+  left: 113px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+
+  font-size: 16px;
+}
+
+.price-controls input {
+  width: 60px;
+  border: none; 
+}
+
+

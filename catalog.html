@@ -30,35 +30,35 @@
         </ul>
       </div>
       <nav class="main-navigation">
-          <ul class="header-site-navigation">
-            <li class="catalog-menu"><a class="catalog-link" href="catalog.html">Каталог товаров</a>
-              <ul class="dropdown-menu">
-                <li>
-                  <ul>
-                    <li><a href="#">Виртуальная реальность</a></li>
-                    <li><a href="#">Моноподы для селфи</a></li>
-                    <li><a href="#">Экшн-камеры</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li><a href="#">Фитнес-браслеты</a></li>
-                    <li><a href="#">Умные часы</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li><a href="#">Квадрокоптеры</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="delivery-link"><a href="delivery.html">Доставка</a></li>
-            <li class="guarantee-link"><a href="guarantee.html">Гарантия</a></li>
-            <li class="contacts-link"><a href="contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
+        <ul class="header-site-navigation">
+          <li class="catalog-menu"><a class="catalog-link" href="catalog.html">Каталог товаров</a>
+            <ul class="dropdown-menu">
+              <li>
+                <ul>
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="#">Фитнес-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="#">Квадрокоптеры</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="delivery-link"><a href="delivery.html">Доставка</a></li>
+          <li class="guarantee-link"><a href="guarantee.html">Гарантия</a></li>
+          <li class="contacts-link"><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
     </div>
   </header>
 
@@ -75,8 +75,20 @@
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-count">
             <legend>Стоимость</legend>
-            <!-- Заглушка -->
-            <input type="range">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar">
+                  </div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="filter-color">
             <legend>Цвет</legend>
@@ -165,7 +177,6 @@
               <h3><a href="#">Непотопляемая селфи-палка</a></h3>
               <span class="catalog-item-price">2 500 руб.</span>
             </div>
-
           </li>
           <li class="catalog-item">
             <div class="catalog-item-container">
