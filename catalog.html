@@ -128,7 +128,7 @@
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no"
-                  id="filter-bluetooth-no" disabled>
+                  id="filter-bluetooth-no">
                 <label for="filter-bluetooth-no">Нет</label>
               </li>
             </ul>
@@ -137,6 +137,39 @@
         </form>
       </section>
       <section class="catalog">
+        <div class="catalog-sorting">
+          <h2>Сортировка:</h2>
+          <ul class="catalog-sorting-list">
+            <li class="catalog-sorting-item">
+              <a href="#">По цене</a>
+            </li>
+            <li class="catalog-sorting-item">
+              <a href="#">По типу</a>
+            </li>
+            <li class="catalog-sorting-item">
+              <a href="#">По популярности</a>
+            </li>
+            <li class="catalog-sorting-item">
+              <a class="sort-button sort-up" href="#">
+                <span class="visually-hidden">Вверх</span>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10"
+                  xml:space="preserve">
+                  <polygon fill="#231F20" points="5.5,0 0,10 11,10 " />
+                </svg>
+              </a>
+              <a class="sort-button sort-down" href="#">
+                <span class="visually-hidden">Вниз</span>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10"
+                  xml:space="preserve">
+                  <polyline fill="#231F20" points="5.5,10 0,0 11,0 " />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        </ul>
         <h2 class="visually-hidden">Список селфи-палок</h2>
         <ul class="catalog-list">
           <li class="catalog-item">

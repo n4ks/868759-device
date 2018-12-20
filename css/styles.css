@@ -104,7 +104,7 @@ img {
 
 .main-header {
   width: 1160px;
-  padding-bottom: 54px;
+  padding-bottom: 50px;
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -123,7 +123,7 @@ img {
   height: 36px;
   letter-spacing: 0.3px;
   position: absolute;
-  top: -24px;
+  top: -23px;
   left: 58px;
 }
 
@@ -143,6 +143,7 @@ img {
   font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
+  letter-spacing: 0.2px;
   border: none;
   border-bottom: 2px solid transparent;
   background-color: transparent;
@@ -561,6 +562,10 @@ img {
   color: rgba(0, 0, 0, 0.1);
 }
 
+.filter {
+  width: 210px;
+}
+
 .filter fieldset {
   border: none;
   margin: 0;
@@ -671,7 +676,7 @@ img {
 }
 
 .filter-count legend {
-  margin-bottom: 26px;
+  margin-bottom: 36px;
 }
 
 .filter-color legend {
@@ -679,7 +684,7 @@ img {
 }
 
 .filter .filter-count {
-  margin-bottom: 63px;
+  margin-bottom: 40px;
 }
 
 .filter-bluetooth legend {
@@ -1005,12 +1010,13 @@ img {
 }
 
 .inner-page .main-header {
-  margin-bottom: 39px;
+  margin-bottom: 37px;
 }
 
 .inner-page .page-title {
-  margin: 0 0 23px 0;
+  margin: 0;
   padding: 0;
+  margin-bottom: 23px;
   font-size: 47.5px;
   line-height: 47.5px;
   letter-spacing: 0.3px;
@@ -1023,7 +1029,7 @@ img {
   font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-
+  letter-spacing: 0.1px;
   list-style: none;
 
   display: flex;
@@ -1033,7 +1039,7 @@ img {
 
 .breadcrumbs li {
   position: relative;
-  margin-right: 40px;
+  margin-right: 38px;
 }
 
 .breadcrumbs li::after {
@@ -1085,7 +1091,6 @@ img {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-top: 116px;
 }
 
 .top-header-wrapper {
@@ -1585,8 +1590,6 @@ img {
 .range-controls .scale {
   height: 2px;
   background: #dbdbdb;
-  /* Временный отступ */
-  margin-bottom: 20px;
 }
 
 .range-controls .bar {
@@ -1597,6 +1600,7 @@ img {
 
 .range-controls {
   position: relative;
+  padding-bottom: 10px;
 }
 
 .range-controls .toggle {
@@ -1640,4 +1644,52 @@ img {
   border: none; 
 }
 
+.catalog-sorting {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 93px;
+}
 
+.catalog-sorting h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.8px;
+  text-transform: uppercase;
+  padding-right: 49px;
+}
+
+.catalog-sorting-list {
+  width: 560px;
+  font-family: "OpenSansRegular", Arial, sans-serif;
+  font-size: 14px;
+  list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.catalog-sorting-item a {
+  color: #000000;
+}
+
+.catalog-sorting-item {
+  margin-right: 30px;
+  opacity: 0.3;
+}
+
+.catalog-sorting-item:hover {
+  opacity: 0.6;
+}
+
+.catalog-sorting-item:active {
+  opacity: 1;
+}
+
+.catalog-sorting-item:last-child {
+  margin-left: auto;
+  margin-right: 0;
+  padding-left: 16px;
+}
