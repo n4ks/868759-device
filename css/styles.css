@@ -113,7 +113,7 @@ img {
 
 .main-logo {
   font-size: 48px;
-  line-height: 48px;
+  line-height: 42px;
   text-transform: uppercase;
 
 }
@@ -123,7 +123,7 @@ img {
   height: 36px;
   letter-spacing: 0.3px;
   position: absolute;
-  top: -23px;
+  top: -19px;
   left: 58px;
 }
 
@@ -247,7 +247,7 @@ img {
   position: relative;
   width: 1040px;
   padding: 0 60px;
-  background: linear-gradient(to bottom, #f7e296 108px, #ffffff 0px);
+  background: linear-gradient(to bottom, #f7e296 112px, #ffffff 0px);
   margin-bottom: 100px;
 }
 
@@ -259,12 +259,12 @@ img {
 
 .slider-item-picture img {
   margin-left: 30px;
-  margin-top: -4px;
+  margin-top: 1px;
 }
 
 .slider-item-description {
   width: 560px;
-  padding-top: 77px;
+  padding-top: 82px;
 }
 
 .slider-controls label {
@@ -293,7 +293,7 @@ img {
   line-height: 56px;
   padding: 0;
   margin: 0;
-  padding-bottom: 18px;
+  padding-bottom: 17px;
   letter-spacing: 0.5px;
 }
 
@@ -329,7 +329,7 @@ img {
   max-width: 485px;
   line-height: 30px;
   letter-spacing: 0.16px;
-  padding-bottom: 51px;
+  padding-bottom: 52px;
 }
 
 .slider-list {
@@ -348,7 +348,7 @@ img {
   font-size: 180.5px;
   line-height: 180.5px;
   color: #ffffff;
-  top: -15px;
+  top: -11px;
   right: -12px;
 }
 
@@ -481,6 +481,10 @@ img {
 }
 
 .main-footer {
+  margin-top: 89px;
+  padding-bottom: 62px;
+  padding-top: 63px;
+
   background-color: #464646;
   color: #ffffff;
 }
@@ -490,7 +494,6 @@ img {
   color: #ffc600;
 }
 
-/* привязать к контейнеру, а не к футеру */
 .main-footer .main-logo::before {
   content: "";
   width: 80px;
@@ -684,7 +687,7 @@ img {
 }
 
 .filter .filter-count {
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .filter-bluetooth legend {
@@ -930,8 +933,8 @@ img {
   padding: 0 40px;
 }
 
-.main-footer {
-  margin-top: 89px;
+.inner-page .main-footer {
+  margin-top: 66px;
   padding-bottom: 62px;
   padding-top: 63px;
 }
@@ -947,7 +950,11 @@ img {
 .top-footer-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 19px;
+  margin-bottom: 25px;
+}
+
+.inner-page .top-footer-wrapper {
+  margin-bottom: 24px;
 }
 
 .footer-user-navigation {
@@ -1010,7 +1017,7 @@ img {
 }
 
 .inner-page .main-header {
-  margin-bottom: 37px;
+  margin-bottom: 38px;
 }
 
 .inner-page .page-title {
@@ -1238,7 +1245,7 @@ img {
 
 .pagination-list {
   margin: 0;
-  padding: 0 30px;
+  padding: 23px 30px;
 
   font-size: 16px;
   line-height: 24px;
@@ -1381,7 +1388,7 @@ img {
   width: 100%;
   padding-bottom: 100%;
   background: #f7e296 no-repeat center;
-  margin-bottom: 34px;
+  margin-bottom: 33px;
 }
 
 .popular-item-logo.vr-logo {
