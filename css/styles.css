@@ -9,7 +9,7 @@
 @font-face {
   font-family: "OpenSansLight";
   src: url("../fonts/opensans-light-webfont.woff2") format("woff2");
-  /* добавить woff для критерия */
+  src: url("../fonts/opensans-light-webfont.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
 @font-face {
   font-family: "GilroyExtraBold";
   src: url("../fonts/gilroyextrabold-webfont.woff2") format("woff2");
-  /* добавить woff для критерия */
+  src: url("../fonts/gilroyextrabold-webfont.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
