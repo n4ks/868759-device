@@ -373,16 +373,12 @@ img {
 }
 
 .slider-item-specifications {
-  /* display: flex; */
-  /* flex-direction: column-reverse; */
+  display: flex;
+  flex-direction: column-reverse;
   padding-top: 55px;
 }
 
-.slider-item-specifications colgroup {
-  width: 30%;
-}
-
-.slider-item-specifications thead {
+.slider-item-specifications .slider-item-specifications thead {
   font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 13px;
   line-height: 20px;
@@ -888,7 +884,6 @@ img {
 }
 
 .header-user-navigation {
-  /* width: 500px; */
   display: flex;
   align-items: center;
   padding-bottom: 17px;
@@ -902,6 +897,10 @@ img {
 
 .header-user-navigation li {
   margin-left: 38px;
+}
+
+.header-user-navigation li:nth-child(2) {
+  margin-left: 210px;
 }
 
 .login-link,
@@ -1596,23 +1595,29 @@ img {
   padding-right: 0;
 }
 
-/* Не работает в IE */
-.manufacturers-list-item img {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
+.dji-logo:hover {
+  background: url("../img/dji-logo-colored.png");
+  width: 260px;
+  height: 100px;
 }
 
-.manufacturers-list-item img:hover {
-  filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
+.spgadgets-logo:hover {
+  background: url("../img/spgadgets-logo-colored.png");
+  width: 260px;
+  height: 100px;
 }
 
+.gopro-logo:hover {
+  background: url("../img/gopro-logo-colored.png");
+  width: 260px;
+  height: 100px;
+}
+
+.vive-logo:hover {
+  background: url("../img/vive-logo-colored.png");
+  width: 260px;
+  height: 100px;
+}
 
 .price-controls {
   font-family: "GilroyLight", Arial, sans-serif;
