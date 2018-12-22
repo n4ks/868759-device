@@ -245,26 +245,49 @@ img {
 
 .slider {
   position: relative;
-  width: 1040px;
-  padding: 0 60px;
+  width: 1140px;
+  padding: 0 10px;
   background: linear-gradient(to bottom, #f7e296 112px, #ffffff 0px);
   margin-bottom: 100px;
 }
 
-.slider-item-picture {
-  width: 560px;
-  padding-right: 41px;
-  margin: 0 auto;
+.slider-item:nth-child(3) .slider-item-picture {
+  padding-left: 20px;
 }
 
-.slider-item-picture img {
-  margin-left: 30px;
-  margin-top: 1px;
+.slider-item:nth-child(1) img {
+  padding-top: 5px;
+}
+
+.slider-item:nth-child(1) .slider-item-picture {
+  padding-left: 80px;
+}
+
+.slider-item:nth-child(2) .slider-item-picture {
+  padding-left: 106px;
+  padding-top: 14px;
+}
+
+.slider-item:nth-child(3) .slider-item-picture {
+  padding-top: 67px;
 }
 
 .slider-item-description {
-  width: 560px;
+  /* width: 560px; */
   padding-top: 81px;
+  box-sizing: border-box;
+}
+
+.slider-item:nth-child(1) .slider-item-description {
+  padding-left: 127px;
+}
+
+.slider-item:nth-child(2) .slider-item-description {
+  padding-left: 138px;
+}
+
+.slider-item:nth-child(3) .slider-item-description {
+  padding-left: 42px;
 }
 
 .slider-controls label {
@@ -289,7 +312,7 @@ img {
 }
 
 .slider-item .page-subtitle {
-  max-width: 500px;
+  max-width: 505px;
   line-height: 56px;
   padding: 0;
   margin: 0;
@@ -298,7 +321,7 @@ img {
 }
 
 .slider-item .slider-button {
-  padding: 0 42px;
+  padding: 0 45px;
 }
 
 .page-subtitle.title-notch-white {
@@ -315,8 +338,7 @@ img {
 }
 
 .about-us p,
-.contacts p,
-.slider-item p {
+.contacts p {
   margin: 0;
   padding: 0;
   font-family: "OpenSansLight", Arial, sans-serif;
@@ -324,14 +346,30 @@ img {
   line-height: 30px;
   letter-spacing: 0.1px;
   color: #464646;
-
 }
 
 .slider-item p {
-  max-width: 485px;
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSansLight", Arial, sans-serif;
+  font-size: 15px;
   line-height: 30px;
-  letter-spacing: 0.16px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #464646;
   padding-bottom: 52px;
+}
+
+.slider-item:nth-child(1) p {
+  width: 485px;
+}
+
+.slider-item:nth-child(2) p {
+  max-width: 450px;
+}
+
+.slider-item:nth-child(3) p {
+  max-width: 455px;
 }
 
 .slider-list {
@@ -358,7 +396,7 @@ img {
   display: none;
 }
 
-.slider-item:nth-child(1) {
+.slider-item:nth-child(2) {
   display: flex;
 }
 
