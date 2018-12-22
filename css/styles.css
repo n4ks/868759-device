@@ -151,11 +151,11 @@ img {
 
 }
 
-.search-wrapper {
+.search-form {
   position: relative;
 }
 
-.search-wrapper::before {
+.search-form::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -378,7 +378,7 @@ img {
   padding-top: 55px;
 }
 
-.slider-item-specifications .slider-item-specifications thead {
+.slider-item-specifications thead {
   font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 13px;
   line-height: 20px;
