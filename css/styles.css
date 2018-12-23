@@ -318,8 +318,10 @@ img {
 }
 
 .slider-controls label {
-  display: inline-block;
   position: relative;
+
+  display: inline-block;
+
   width: 10px;
   height: 10px;
   margin-right: 21px;
@@ -428,8 +430,8 @@ img {
   top: -11px;
   right: 38px;
 
-  counter-increment: section;
   content: counters(section, ".", decimal-leading-zero);
+  counter-increment: section;
 
   color: #ffffff;
 
@@ -450,18 +452,19 @@ img {
 .item-1:checked~.slider-controls label[for="item-1"]::before,
 .item-2:checked~.slider-controls label[for="item-2"]::before,
 .item-3:checked~.slider-controls label[for="item-3"]::before {
-  content: "";
   position: absolute;
+  top: 50%;
+  left: 50%;
+
   width: 3px;
   height: 3px;
 
-  background-color: #ffffff;
+  content: "";
+  transform: translate(-50%, -50%);
+
   border: 1px solid #000000;
   border-radius: 50%;
-
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: #ffffff;
 }
 
 .specifications-columns col:first-child {
@@ -1340,11 +1343,12 @@ img {
 }
 
 .modal-feedback {
+  z-index: 30;
   top: 400px;
   left: 50%;
 
   display: none;
-  z-index: 30;
+
   width: 760px;
   margin-top: -280px;
   margin-left: -500px;
@@ -1434,6 +1438,7 @@ img {
 
 .modal-close {
   position: absolute;
+  z-index: 3;
   top: 28px;
   right: 22px;
 
@@ -1441,7 +1446,7 @@ img {
   height: 55px;
 
   cursor: pointer;
-  z-index: 3;
+
   opacity: 0.5;
   border: 0;
   background: none;
@@ -1478,11 +1483,11 @@ img {
 
 .pagination-list {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
-  align-items: center;
 
   list-style: none;
 
@@ -1494,6 +1499,7 @@ img {
 
 .pagination-item a {
   display: block;
+
   color: #000000;
 }
 
@@ -1501,6 +1507,7 @@ img {
   margin: 0;
   padding: 0;
   padding: 23px 30px;
+
   letter-spacing: 3.5px;
   text-transform: uppercase;
 }
@@ -1521,8 +1528,8 @@ img {
 
 .catalog-sorting .current-option,
 .pagination-item .current-option {
-  color: #000000;
   opacity: 1;
+  color: #000000;
 }
 
 /* .catalog-sorting .arrow-down path {
@@ -2109,6 +2116,7 @@ img {
 
 .modal-show {
   display: block;
+
   animation: bounce 0.6s;
 }
 
@@ -2160,14 +2168,15 @@ img {
 .modal-map iframe {
   position: relative;
   z-index: 2;
+
   border: none;
 }
 
 .modal-map img {
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
-  z-index: 1;
 
   margin: 0;
 }
