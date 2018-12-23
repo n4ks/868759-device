@@ -319,7 +319,7 @@ img {
 
 .slider-controls label {
   display: inline-block;
-
+  position: relative;
   width: 10px;
   height: 10px;
   margin-right: 21px;
@@ -330,7 +330,6 @@ img {
   border-radius: 50%;
   background-color: transparent;
 }
-
 
 .slider-controls {
   position: absolute;
@@ -438,23 +437,35 @@ img {
   line-height: 180.5px;
 }
 
-.slider-item {
+.slide {
   display: none;
 }
 
-.slider-item:nth-child(1) {
+
+.item-1:checked ~ .slider-list .slider-item:nth-child(1),
+.item-2:checked ~ .slider-list .slider-item:nth-child(2),
+.item-3:checked ~ .slider-list .slider-item:nth-child(3) {
   display: flex;
 }
 
-.item-1:checked~.slider-item:nth-child(1),
-.item-2:checked~.slider-item:nth-child(2),
-.item-3:checked~.slider-item:nth-child(3) {
-  display: flex;
+.item-1:checked ~ .slider-controls label[for="item-1"]::before,
+.item-2:checked ~ .slider-controls label[for="item-2"]::before,
+.item-3:checked ~ .slider-controls label[for="item-3"]::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 50%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.item-1:checked~label[for="item-1"] {
-  background-color: #000000;
-}
+
 
 .slider-item-specifications {
   display: flex;
