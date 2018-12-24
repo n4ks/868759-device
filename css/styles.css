@@ -767,7 +767,7 @@ img {
 .filter-input-checkbox+label::before {
   position: absolute;
   top: 8px;
-  left: -41px;
+  left: -2px;
 
   width: 23px;
   height: 23px;
@@ -782,7 +782,7 @@ img {
 .filter-input-checkbox:checked+label::after {
   position: absolute;
   top: 8px;
-  left: -41px;
+  left: -2px;
 
   width: 27px;
   height: 23px;
@@ -810,7 +810,7 @@ img {
 .filter-input-radio+label::before {
   position: absolute;
   top: 7px;
-  left: -41px;
+  left: -2px;
 
   width: 25px;
   height: 25px;
@@ -825,7 +825,7 @@ img {
 .filter-input-radio:checked+label::after {
   position: absolute;
   top: 15px;
-  left: -33px;
+  left: 6px;
 
   width: 9px;
   height: 9px;
@@ -883,15 +883,17 @@ img {
 .filter-color-list {
   margin: 0;
   padding: 0;
-  padding-left: 39px;
 
   letter-spacing: -0.1px;
+}
+
+.filter-option label {
+  padding-left: 39px;
 }
 
 .filter-bluetooth-list {
   margin: 0;
   padding: 0;
-  padding-left: 39px;
 }
 
 .filter .filter-bluetooth {
