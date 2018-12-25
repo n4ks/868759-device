@@ -2442,6 +2442,11 @@ img {
   margin: 0;
 }
 
-.invalid {
+input.invalid {
   background: #edb5b5;
+}
+
+
+.feedback-form input:invalid {
+  background-color: #edb5b5;
 }
