@@ -452,22 +452,31 @@ img {
   padding: 0;
 
   list-style: none;
-
-  counter-reset: section;
 }
 
 .slider-item::before {
   position: absolute;
   top: -11px;
   right: 38px;
-z-index: 0;
-  content: counters(section, ".", decimal-leading-zero);
-  counter-increment: section;
+  z-index: 0;
+  content: "";
 
   color: #ffffff;
 
   font-size: 180px;
   line-height: 180px;
+}
+
+.slider-item:nth-child(1)::before{
+  content: "01";
+}
+
+.slider-item:nth-child(2)::before{
+  content: "02";
+}
+
+.slider-item:nth-child(3)::before{
+  content: "03";
 }
 
 .slide {
@@ -1254,7 +1263,7 @@ z-index: 0;
 }
 
 .inner-page .main-footer {
-  margin-top: 0;
+  margin-top: 10px;
   padding-top: 63px;
   padding-bottom: 62px;
 }
@@ -1279,7 +1288,7 @@ z-index: 0;
 }
 
 .inner-page .top-footer-wrapper {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .footer-user-navigation {
@@ -1373,7 +1382,7 @@ z-index: 0;
   margin-bottom: 24px;
   padding: 0;
 
-  letter-spacing: 0.3px;
+  letter-spacing: 0.6px;
 
   color: #000000;
 
@@ -1633,7 +1642,7 @@ z-index: 0;
 
   margin: 0;
   padding: 0;
-
+  margin-top: -10px;
   list-style: none;
 
   background-color: #ebebeb;
@@ -1684,10 +1693,6 @@ z-index: 0;
 .pagination-item:last-child {
   margin-right: 0;
   margin-left: auto;
-}
-
-.pagination-item:last-child a {
-  margin-right: -3.5px;
 }
 
 .pagination-item:first-child a {
@@ -1936,6 +1941,10 @@ z-index: 0;
   padding: 0 19px;
 }
 
+.advantage-slide-active {
+  color: #f7e184;
+}
+
 .slider-advantages-menu-item:nth-child(2) .button {
   padding: 0 24px;
 }
@@ -1949,6 +1958,12 @@ z-index: 0;
 }
 
 .slider-advantages-menu-item .button:focus::after {
+  padding: 16px 116px 16px 0;
+
+  background: #000000;
+}
+ 
+.slider-advantages-menu-item  .advantage-slide-active::after {
   padding: 16px 116px 16px 0;
 
   background: #000000;
@@ -2114,13 +2129,14 @@ z-index: 0;
   vertical-align: middle;
   width: 44%;
 
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .price-controls input {
   width: 60px;
-
+  background-color: transparent;
   border: none;
+  margin-left: 5px;
 }
 
 .catalog-sorting {

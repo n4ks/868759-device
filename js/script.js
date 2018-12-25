@@ -15,7 +15,6 @@ var form = feedbackPopup.querySelector("form");
 feedbackButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   feedbackPopup.classList.add("modal-show");
-  name.focus();
 });
 
 feedbackClose.addEventListener("click", function (evt) {
@@ -47,7 +46,7 @@ var mapLink = document.querySelector(".map-link");
 
 var mapPopup = document.querySelector(".modal-map");
 
-//   var mapClose = mapPopup.querySelector(".modal-close");
+var mapClose = mapPopup.querySelector(".modal-close");
 
 mapLink.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -60,8 +59,9 @@ mapClose.addEventListener("click", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-  evt.preventDefault();
+
   if (evt.keyCode === 27) {
+    evt.preventDefault();
     if (mapPopup.classList.contains("modal-show")) {
       mapPopup.classList.remove("modal-show");
     }

@@ -197,13 +197,13 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="slider-advantages-menu">
           <li class="slider-advantages-menu-item">
-            <button class="button button-delivery" autofocus>Доставка</button>
+            <button class="button advantage-slide-active">Доставка</button>
           </li>
           <li class="slider-advantages-menu-item">
-            <button class="button button-warranty">Гарантия</button>
+            <button class="button">Гарантия</button>
           </li>
           <li class="slider-advantages-menu-item">
-            <button class="button button-credit">Кредит</button>
+            <button class="button">Кредит</button>
           </li>
         </ul>
         <ul class="slider-advantages-list">
@@ -274,7 +274,7 @@
               <img src="img/map.jpg" width="560" height="222" alt="улица Строителей дом 15, Москва">
             </a>
           </div>
-          <button type="button" class="button feedback-button">Напишите нам</button>
+          <a type="button" class="button feedback-button" href="write-us.html">Напишите нам</a>
         </section>
       </div>
     </div>
@@ -405,11 +405,11 @@
           </div>
           <div class="feedback-email-wrapper">
             <label for="feedback-email">Ваш e-mail:</label>
-            <input type="email" name="email" placeholder="email@example.com" id="feedback-email">
+            <input type="email" name="email" placeholder="email@example.com" id="feedback-email" required>
           </div>
         </div>
         <label for="feedback-text">Текст письма</label>
-        <textarea name="feedback-text" cols="50" rows="4" placeholder="В свободной форме" id="feedback-text"></textarea>
+        <textarea name="feedback-text" cols="50" rows="4" placeholder="В свободной форме" id="feedback-text" required></textarea>
       </div>
       <button class="button" type="submit">Отправить</button>
       <button class="modal-close" type="button">Закрыть</button>
